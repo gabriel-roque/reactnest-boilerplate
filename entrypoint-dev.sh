@@ -5,17 +5,17 @@ echo "\n"
 npm install
 
 
-echo "****** [API DEPEDENCES] ****** [CONFIGURING PROJECT] ******"
+echo "****** [API DEPENDENCIES] ****** [CONFIGURING PROJECT] ******"
 echo "\n"
 
 cd ./api 
 cp .env.example .env
-adonis key:generate
+npx adonis key:generate
 npm install
 cd ..
 
 
-echo "****** [WEB-APP DEPEDENCES] ****** [CONFIGURING PROJECT] ******"
+echo "****** [WEB-APP DEPENDENCIES] ****** [CONFIGURING PROJECT] ******"
 echo "\n"
 cd ./web-app 
 npm install
