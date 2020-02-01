@@ -36,7 +36,7 @@ services:
     container_name: app-api
     volumes:
       - ./api:/api
-    command: sh -c "npm start"
+    command: sh -c "npx pm2 start ecosystem.config.js --no-daemon"
     ports:
       - "8080:8080"
     environment:
