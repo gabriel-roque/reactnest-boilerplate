@@ -1,7 +1,25 @@
 # React-Donis-Docker-Starter
+
+
+
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ReactJS-16.x-blue"> 
+  <img src="https://img.shields.io/badge/Node-12.x-green">
+  <img src="https://img.shields.io/badge/Postgress-10-blue">
+  <img src="https://img.shields.io/badge/AdonisJS-4.x-blueviolet">
+  <img src="https://img.shields.io/badge/NPM-6.x-red">
+  <img src="https://img.shields.io/badge/Commitizen-friendly-green">
+</p>
+
+<hr>
+
+## :bulb: Introduction 
+
 A simple project starter with (Ngnix, Reactjs, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
 
-### Minimal Requirements
+### :memo: Minimal Requirements
 
 * NodeJs 12.x
 * Docker 18.x
@@ -14,13 +32,13 @@ $ https://github.com/gabriel-roque/react-donis-docker-starter
 $ cd react-donis-docker-starter
 ```
 
-## 🖱️ Configure in development
+## :wrench: Configure in development
 
 ```
 $ ./entrypoint-dev.sh
 ```
 
-## 🖱️ Configure in production
+## :wrench: Configure in production
 
 ```
 $ ./entrypoint-prod.sh
