@@ -1,6 +1,17 @@
 version: "3"
 
 services:
+  web:
+    image: nginx:latest
+    container_name: web-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./web-app/build:/var/www/html
+      - ./ngnix/config/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - api-service
+
   database-service:
     image: postgres:10
     container_name: app-database
@@ -17,6 +28,7 @@ services:
       - ./database/docker-data/postgres:/var/lib/postgresql/data
       # - ./database/schema.sql:/docker-entrypoint-initdb.d/0.schema.sql
       #- ./database/initial-data.sql:/docker-entrypoint-initdb.d/1.data.sql
+
   api-service:
     build:
       context: ./api
@@ -32,14 +44,3 @@ services:
       - DB_PORT=5432
     depends_on:
       - database-service
-
-  webapp-service:
-    container_name: app-webapp
-    build:
-      context: ./web-app
-      dockerfile: Dockerfile
-    volumes:
-      - ./web-app:/app
-    command: "npm start"
-    ports:
-      - "3000:3000"

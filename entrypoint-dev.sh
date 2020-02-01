@@ -1,4 +1,4 @@
-echo "************* [DEVOLVA JÁ] *************"
+echo "************* [REACT-DONIS-STARTER] *************"
 
 echo "****** [CHANGELOG CONVENTION] ****** [CONFIGURING PROJECT] ******"
 echo "\n"
@@ -25,6 +25,6 @@ cd ..
 echo "****** [DOCKER] ****** [CONFIGURING PROJECT] ******"
 echo "\n"
 
-cp docker-compose.example docker-compose.yml
+cp docker-compose.dev.example docker-compose.yml
 
 docker-compose up
