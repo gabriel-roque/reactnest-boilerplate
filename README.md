@@ -26,7 +26,9 @@ $ ./entrypoint-prod.sh
 $ docker-compose up -d
 ```
 
-> Check **web-app** in http://localhost:3000/ or http://localhost/
+> Check **web-app** in http://localhost:3000/  for _**DEVELOPMENT**_ 
+
+> Check **web-app** in http://localhost/ for _**PRODUCTION**_
 
 > Check **api** in http://localhost:8080
 
