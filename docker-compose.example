@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+  database-service:
+    image: postgres:10
+    container_name: app-database
+    environment:
+      - POSTGRES_DB=adonis_db
+      - POSTGRES_DB_TEST=adonis_db_teste
+      - POSTGRES_USER=adonis_usr
+      - POSTGRES_PASSWORD=123456
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    volumes:
+      - ./database/docker-data/postgres:/var/lib/postgresql/data
+      # - ./database/schema.sql:/docker-entrypoint-initdb.d/0.schema.sql
+      #- ./database/initial-data.sql:/docker-entrypoint-initdb.d/1.data.sql
+  api-service:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: app-api
+    volumes:
+      - ./api:/api
+    command: sh -c "npm start"
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=app-database
+      - DB_PORT=5432
+    depends_on:
+      - database-service
+
+  webapp-service:
+    container_name: app-webapp
+    build:
+      context: ./web-app
+      dockerfile: Dockerfile
+    volumes:
+      - ./web-app:/app
+    command: "npm start"
+    ports:
+      - "3000:3000"

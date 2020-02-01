@@ -1,0 +1,33 @@
+{
+  "name": "react-donis-docker-starter",
+  "version": "1.0.0",
+  "description": "react-donis-docker-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-roque/starwars-battle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel-roque/starwars-battle/issues"
+  },
+  "homepage": "https://github.com/gabriel-roque/starwars-battle#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^4.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
