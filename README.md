@@ -1,5 +1,5 @@
 # React-Donis-Docker-Starter
-A simple project starte with (Ngnix, Reactjs, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
+A simple project starter with (Ngnix, Reactjs, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
 
 ## 🚀 Install
 
