@@ -1,8 +1,6 @@
-# React-Donis-Docker-Starter
-
-
-
-
+<p align="center">
+  <img src="web-app/src/assets/img/reactdonis.jpg"/>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/ReactJS-16.x-blue"> 
