@@ -3,7 +3,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ReactJS-16.x-blue"> 
+  <img src="https://img.shields.io/badge/ReactJS-16.x-blue">
+  <img src="https://img.shields.io/badge/Redux-4.0.x-blue">
+  <img src="https://img.shields.io/badge/Redux Thunk-2.3.x-green">
+  <img src="https://img.shields.io/badge/React Router-5.1.x-blueviolet">
+  <img src="https://img.shields.io/badge/PM2-4.2.x-orange">
   <img src="https://img.shields.io/badge/Node-12.x-green">
   <img src="https://img.shields.io/badge/Postgress-10-blue">
   <img src="https://img.shields.io/badge/AdonisJS-4.x-blueviolet">
