@@ -30,7 +30,7 @@ A simple project starter with (Ngnix, Reactjs, Redux, Redux Thunk, React Router,
 ## 🚀 Install
 
 ```
-$ https://github.com/gabriel-roque/react-donis-docker-starter
+$ git clone https://github.com/gabriel-roque/react-donis-docker-starter
 $ cd react-donis-docker-starter
 ```
 
