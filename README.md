@@ -17,15 +17,15 @@
 
 <hr>
 
-## :bulb: Introduction 
+## :bulb: Introduction
 
 A simple project starter with (Ngnix, Reactjs, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
 
 ## :memo: Minimal Requirements
 
-* NodeJs 12.x
-* Docker 18.x
-* Docker-compose 1.25.x
+- NodeJs 12.x
+- Docker 18.x
+- Docker-compose 1.25.x
 
 ## 🚀 Install
 
@@ -52,7 +52,7 @@ $ ./entrypoint-prod.sh
 $ docker-compose up -d
 ```
 
-> Check **web-app** in http://localhost:3000/  for _**DEVELOPMENT**_ 
+> Check **web-app** in http://localhost:3000/ for _**DEVELOPMENT**_
 
 > Check **web-app** in http://localhost/ for _**PRODUCTION**_
 
@@ -60,16 +60,15 @@ $ docker-compose up -d
 
 ## 👤 Authors
 
-| Gabriel Roque |
-| ------------- |
-| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110">  |
-| <a href="https://github.com/gabriel-roque">Github</a>  |
-| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a> |
-
+| Gabriel Roque                                                                       |
+| ----------------------------------------------------------------------------------- |
+| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110"> |
+| <a href="https://github.com/gabriel-roque">Github</a>                               |
+| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a>                   |
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/gabriel-roque/react-donis-docker-starter/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/gabriel-roque/react-donis-docker-starter/issues).
 
 ## Show your support
 
@@ -78,4 +77,3 @@ Give a ⭐️ if this project helped you!
 <p align="center">
   <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/logo-gabriel-roque.png" width="200"/>
 </p>
-

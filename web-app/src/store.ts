@@ -1,10 +1,10 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
-// Import new modules here
+// Import new modules redux here
 import auth from 'modules/auth/store/reducer';
 
-// Connect new modules here
+// Connect new modules redux here
 const reducers = combineReducers({ auth });
 
 declare global {
