@@ -15,10 +15,12 @@ declare global {
 
 let composeEnhancer = compose;
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.REACT_APP_ENVIRONMENT === 'development') {
   composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 }
 
 const store = createStore(reducers, composeEnhancer(applyMiddleware(thunk)));
+
+console.log(process.env);
 
 export default store;
