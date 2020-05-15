@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 // Import new modules redux here
-import auth from 'modules/auth/store/reducer';
+import auth from 'app/modules/auth/store/reducer';
 
 // Connect new modules redux here
 const reducers = combineReducers({ auth });
@@ -20,7 +20,5 @@ if (process.env.REACT_APP_ENVIRONMENT === 'development') {
 }
 
 const store = createStore(reducers, composeEnhancer(applyMiddleware(thunk)));
-
-console.log(process.env);
 
 export default store;
