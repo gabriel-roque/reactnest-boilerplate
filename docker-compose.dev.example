@@ -33,14 +33,3 @@ services:
       - DB_PORT=5432
     depends_on:
       - database-service
-
-  webapp-service:
-    container_name: app-webapp
-    build:
-      context: ./web-app
-      dockerfile: Dockerfile
-    volumes:
-      - ./web-app:/app
-    command: "npm start"
-    ports:
-      - "3000:3000"

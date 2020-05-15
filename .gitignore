@@ -1,5 +1,6 @@
 docker-compose.yml
-docker-data/*
+database/docker-data/*
+database/*
 .vsls
 .idea
 .env

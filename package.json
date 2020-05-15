@@ -4,15 +4,15 @@
   "description": "react-donis-docker-starter",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabriel-roque/starwars-battle.git"
+    "url": "git+https://github.com/gabriel-roque/react-donis-docker-starter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabriel-roque/starwars-battle/issues"
+    "url": "https://github.com/gabriel-roque/react-donis-docker-starter/issues"
   },
-  "homepage": "https://github.com/gabriel-roque/starwars-battle#readme",
+  "homepage": "https://github.com/gabriel-roque/react-donis-docker-starter#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
