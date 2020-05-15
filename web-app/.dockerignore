@@ -1,5 +1,0 @@
-Dockerfile
-.git/
-.gitignore
-node_modules/
-.env.example
