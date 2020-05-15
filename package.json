@@ -1,0 +1,42 @@
+{
+  "name": "react-donis-docker-starter",
+  "version": "1.0.0",
+  "description": "A simple templete start with ReactJs and AdonisJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-roque/react-donis-docker-starter.git"
+  },
+  "keywords": [
+    "reactjs",
+    "adonisjs",
+    "templete",
+    "starter"
+  ],
+  "author": "gabriel-roque",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-roque/react-donis-docker-starter/issues"
+  },
+  "homepage": "https://github.com/gabriel-roque/react-donis-docker-starter#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+}
