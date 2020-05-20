@@ -1,9 +1,8 @@
 import React from 'react';
-
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { Provider } from 'react-redux';
-import { router as RouterView, store } from 'app/config';
+import { router as RouterView, store } from 'config';
 
 import 'assets/css/global.css';
 

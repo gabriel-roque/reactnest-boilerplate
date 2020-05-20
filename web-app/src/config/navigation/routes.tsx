@@ -2,8 +2,8 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 // Import new modules routes here
-import { routesAuth } from 'app/modules/auth/auth.routes';
-import { routesHome } from 'app/modules/home/home.routes';
+import { routesAuth } from 'modules/auth/auth.routes';
+import { routesHome } from 'modules/home/home.routes';
 
 // Combine new modules routes here
 const routes = [...routesAuth, ...routesHome];
