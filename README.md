@@ -28,6 +28,7 @@
   - [PM2](#pm2)
   - [JWT](#jwt)
   - [Redux + Redux Thunk](#redux)
+  - [Redux DevTools](#redux-devtools)
   - [React Router](#react-router)
   - [Commitlint](#commitlint)
 - [Install](#-install)
@@ -37,6 +38,12 @@
 - [Web-App](#-web-app)
   - [Why Typescript](#why-typescript)
   - [Directory Structure](#directory-structure)
+    - [Core](#core)
+    - [Modules](#modules)
+    - [Layouts](#layouts)
+    - [Shared](#shared)
+    - [Config](#config)
+    - [Assets](#assets)
   - [Style Guide](#style-guide)
 - [References](#-references)
 
@@ -222,7 +229,7 @@ In comming...
 
 <hr>
 
-**Core**
+#### Core
 
 🇺🇸
 
@@ -254,9 +261,7 @@ Você pode percebe através dos exemplos abaixo que em todos os casos as partes 
 
 **Core Directory Structure**
 
-<p>
-  <img src="web-app/src/assets/github/module-core.png">
-</p>
+<img src="web-app/src/assets/github/module-core.png">
 
 **alert.component.tsx**
 
@@ -270,25 +275,94 @@ Você pode percebe através dos exemplos abaixo que em todos os casos as partes 
 
 <img src="web-app/src/assets/github/math-util.png" width="500">
 
+[🔝 back to top](#-summary)
+
 <hr>
 
-### Style Guide
+#### Modules
+
+🇺🇸
+
+It represents a use case for your application and explicitly a functional requirement. For example a Product CRUD. Certainly what is inside the module directory has a business rule included. It contains the following directories:
+
+- **components**: it must be allocated all the components belonging to the module
+- **pages**: you must add all the pages that refer to this module
+- **store**: must maintain the global status management files of the module provided for in
+  <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">
+  flux architecture
+  </a>
+- **module.routes.tsx**: it should be declared all the routes of this module
+
+🇧🇷
+
+Representa um caso de uso da sua aplicação e esplicitamente um requisito funcional. Por exemplo um CRUD de Produtos. Certamente o que está dentro do diretório de modulos possui uma regra de negócio inclusa. Ela contem os seguintes diretórios:
+
+- **components**: nela deverá ser alocados todos os componentes pertencentes ao módulo
+- **pages**: deverá agregar todas as páginas que remetem a este módulo
+- **store**: deve manter os arquivos gerecimento de estado global do módulo prevista na
+  <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">
+  arquitetura flux
+  </a>
+- **module.routes.tsx**: nele deverá ser declarados todas as rotas deste módulo
+
+**Modules Directory Structure**
+
+<p align="center">
+  <img src="web-app/src/assets/github/module-example.png">
+</p>
+
+#### Layouts
+
+🇺🇸
+In comming...
+
+🇧🇷
+In comming...
+
+#### Shared
+
+🇺🇸
+
+In this directory, all components must be allocated where:
+
+- Do not have a business rule;
+- They can have more than one instance;
+- And can be shared only between modules.
+
+For example a button or an input with an error message included.
+
+🇧🇷
+
+Neste diretório deverá ser alocados todos os componentes onde:
+
+- Não possuam regra de negócio;
+- Podem ter mais de uma instância;
+- E podem ser compartilhados somente entre os módulos.
+
+Por exemplo um botão ou um input com mensagem de erro inclusa.
+
+<p align="center">
+  <img src="web-app/src/assets/github/shared-components.png">
+  <img src="web-app/src/assets/github/component-shared.png">
+</p>
+
+[🔝 back to top](#-summary)
+
+## Style Guide
 
 Reduza o caminho de importação usando arquivos index como agregadores.
 
-Nome de componentes página devem usar o sufuxo [Login**Page**]
+Nome de componentes página devem usar o sufixo **Page** em CamelCase. Ex:
 
-**Assets**
+```ts
+  export function LoginPage() {
+    return ()
+  }
+```
 
-**Configs**
+In working....
 
-**Core**
-
-**Layouts**
-
-**Modules**
-
-**Name Files**
+## Name Files
 
 In comming...
 
