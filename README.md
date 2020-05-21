@@ -247,7 +247,7 @@ _How to define?_
 
 If so, this part of the application can be easily maintained in the core, if the answer is no, it should be attached to the module that the business rule corresponds to.
 
-You can see through the examples below that in all cases the parts that are allocated within the core module fit within the question. As useful components, services and functions.
+You can see through the examples below that in all cases the parts that are allocated within the core module fit within the question. As useful **components, services and functions**.
 
 🇧🇷
 
@@ -261,7 +261,7 @@ _Como definir?_
 
 Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a resposta seja não ela deverá ficar juntamente ao môdulo que a regra de negócio corresponde.
 
-Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como componentes, serviços e função úteis.
+Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como **componentes, serviços e função úteis**.
 
 | **Core Directory Structure**                          | **math.ts**                                          |
 | ----------------------------------------------------- | ---------------------------------------------------- |
