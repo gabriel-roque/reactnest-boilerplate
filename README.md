@@ -20,26 +20,25 @@
 
 ## ⚓ Summary
 
-- [Introduction](#introduction)
-  - [Motivation](#motivation)
+- [Introduction](#-introduction)
+  - [Motivation](#-motivation)
 - [Minimal Requirements](#minimal-requirements)
-- [Features](#features)
+- [Features](#-features)
   - [Ngnix](#ngnix)
   - [PM2](#pm2)
   - [JWT](#jwt)
   - [Redux + Redux Thunk](#redux)
   - [React Router](#react-router)
   - [Commitlint](#commitlint)
-- [Install](#install)
+- [Install](#-install)
   - [Development](#development)
   - [Production](#production)
   - [Run App](#run-app)
-- [Web-App](#run-app)
+- [Web-App](#-run-app)
   - [Why Typescript](#why-typescript)
   - [File directory](#file-directory)
   - [Style Guide](#style-guide)
-- [API](#api)
-- [References](#references)
+- [References](#-references)
 
 ## 💡 Introduction
 
@@ -94,19 +93,84 @@ server {
 }
 ```
 
+[🔝 back to top](#-summary)
+
 #### PM2
 
-The use of PM2 is only used in **production configurations**. PM2 is an advanced manager for nodejs processes. You can learn more about PM2 and its features <a href="https://pm2.keymetrics.io/" target="_blank">here</a>
+🇺🇸
 
-O uso do PM2 é somente utilizado em **configurações para produção**. O PM2 é um gerenciador avançado para processos nodejs. Você pode saber mais sobre o PM2 e suas funcionalidades <a href="https://pm2.keymetrics.io/" target="_blank">aqui</a>
+The use of PM2 is only used in **production configurations**. PM2 is an advanced manager for nodejs processes. You can learn more about PM2 and its features <a href="https://pm2.keymetrics.io/" target="_blank">here</a> The PM2 configuration file can be found at `api/ecosystem.config.js`
+
+🇧🇷
+
+O uso do PM2 é somente utilizado em **configurações para produção**. O PM2 é um gerenciador avançado para processos nodejs. Você pode saber mais sobre o PM2 e suas funcionalidades <a href="https://pm2.keymetrics.io/" target="_blank">aqui</a>. O arquivo de configuração do PM2 se encontra em `api/ecosystem.config.js`
+
+**ecosystem.config.js**
+
+```js
+module.exports = {
+  apps: [
+    {
+      name: 'api',
+      script: 'server.js',
+
+      instances: 2,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: '1G',
+      env: {
+        NODE_ENV: 'development',
+      },
+      env_production: {
+        NODE_ENV: 'production',
+      },
+    },
+  ],
+};
+```
+
+🇺🇸
+
+When running in production you will get a result similar to 2 instances of the API managed by PM2. Through the `npx pm2 monit` command, the PM2 monitored over the API will be displayed on your terminal.
+
+🇧🇷
+
+Ao executar em produção você terá um resultado semelhante a 2 instâncias da API gerenciada pelo PM2. Através do comando `npx pm2 monit` será exibido em seu terminal o monitorado do PM2 sobre a API.
+
+<p align="center">
+  <img src="web-app/src/assets/github/pm2-cluster.png">
+  <img src="web-app/src/assets/github/pm2-monit.png">
+</p>
+
+[🔝 back to top](#-summary)
 
 #### JWT
 
+In comming...
+
 #### Redux + Redux Thunk
+
+In comming...
 
 #### React Router
 
-#### Commitlint
+In comming...
+
+#### Conventional Changelog
+
+This project has tools that apply the standards provided for in **RFC 2119** for code change message standardization conventions. To learn more about the tools, we recommend accessing their own documentation.
+
+Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** pra convenções de padronização de mensagens de alteração de código. Para saber mais sobre as ferramentas recomendamos acessar sua própria documentação.
+
+| Tools & RFC                                                              |
+| ------------------------------------------------------------------------ |
+| [Commitlint](https://github.com/conventional-changelog/commitlint)       |
+| [Husky](https://github.com/typicode/husky)                               |
+| [Git CZ](https://github.com/commitizen/cz-cli)                           |
+| [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)                         |
+| [Conventional Changelog](https://www.conventionalcommits.org/en/v1.0.0/) |
+
+[🔝 back to top](#-summary)
 
 ## 📝 Minimal Requirements
 
@@ -140,7 +204,7 @@ $ cd web-app && npm start
 $ docker-compose up -d
 ```
 
-[🔝 back to top](#summary)
+[🔝 back to top](#-summary)
 
 > Check **web-app** in http://localhost:3000/ for _**DEVELOPMENT**_
 
@@ -170,7 +234,12 @@ Give a ⭐️ if this project helped you!
 
 ## ⛳ References
 
-- **KISS (Keep it Simple and Stupid):** https://medium.com/@devisha.singh/the-kiss-principle-in-software-development-everything-you-need-to-know-dd8ea6e46bcd
-- **NGNIX:** https://nginx.org/en/docs/
+[KISS (Keep it Simple and Stupid)](https://medium.com/@devisha.singh/the-kiss-principle-in-software-development-everything-you-need-to-know-dd8ea6e46bcd) |
+[NGNIX](https://nginx.org/en/docs/) |
+[Commitlint](https://github.com/conventional-changelog/commitlint) |
+[Husky](https://github.com/typicode/husky) |
+[Git CZ](https://github.com/commitizen/cz-cli) |
+[RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) |
+[Conventional Changelog](https://www.conventionalcommits.org/en/v1.0.0/) |
 
-[🔝 back to top](#summary)
+[🔝 back to top](#-summary)

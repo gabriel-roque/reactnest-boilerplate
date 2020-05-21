@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "node ace test",
-    "prod": "pm2 start server.js --name api",
+    "prod": "pm2 start ecosystem.config.js",
     "close-service": "pm2 stop api"
   },
   "keywords": [

@@ -14,7 +14,8 @@ cd ..
 
 
 echo "****** [WEB-APP DEPENDENCIES] ****** [CONFIGURING PROJECT] ******"
-cd ./web-app 
+cd ./web-app
+cp .env.production.example .env 
 npm install
 npm run build
 cd ..
