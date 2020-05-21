@@ -59,6 +59,55 @@ Talvez você não queira configurar um projeto do zero, então resolve procurar 
 
 O ReactDonis não procura ser uma bala de prata (única solucação) para todos os projetos e sim prover um modelos inicial para a construção de projetos.
 
+## 🎉 Features
+
+#### Ngnix
+
+🇺🇸
+
+Ngnix comes with a basic configuration, for more configurations just open the `default.conf` file in the `ngnix/config/default.conf` directory of this project. For more details on Ngnix settings access the documentation <a href="https://nginx.org/en/docs/" target="_blank">here</a>
+
+🇧🇷
+
+O Ngnix vem com uma configuração básica, para mais configurações basta abrir o arquivo `default.conf` no diretório `ngnix/config/default.conf` deste projeto. Para mais detalhes sobre configurações do Ngnix acesse a documenteção <a href="https://nginx.org/en/docs/" target="_blank">aqui</a>
+
+**default.conf**
+
+```
+├── ngnix
+│   └── config
+│       └── default.conf
+```
+
+```
+server {
+  listen 80;
+	index index.html;
+	server_name localhost;
+	error_log  /var/log/nginx/error.log;
+	access_log /var/log/nginx/access.log;
+	root /var/www/html;
+
+  location / {
+    try_files $uri /index.html =404;
+  }
+}
+```
+
+#### PM2
+
+The use of PM2 is only used in **production configurations**. PM2 is an advanced manager for nodejs processes. You can learn more about PM2 and its features <a href="https://pm2.keymetrics.io/" target="_blank">here</a>
+
+O uso do PM2 é somente utilizado em **configurações para produção**. O PM2 é um gerenciador avançado para processos nodejs. Você pode saber mais sobre o PM2 e suas funcionalidades <a href="https://pm2.keymetrics.io/" target="_blank">aqui</a>
+
+#### JWT
+
+#### Redux + Redux Thunk
+
+#### React Router
+
+#### Commitlint
+
 ## 📝 Minimal Requirements
 
 - NodeJs 12.x
@@ -99,10 +148,6 @@ $ docker-compose up -d
 
 > Check **api** in http://localhost:8080
 
-## ⛳ References
-
-- **KISS (Keep it Simple and Stupid):** https://medium.com/@devisha.singh/the-kiss-principle-in-software-development-everything-you-need-to-know-dd8ea6e46bcd
-
 ## 👤 Authors
 
 | Gabriel Roque                                                                       |
@@ -122,3 +167,10 @@ Give a ⭐️ if this project helped you!
 <p align="center">
   <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/logo-gabriel-roque.png" width="200"/>
 </p>
+
+## ⛳ References
+
+- **KISS (Keep it Simple and Stupid):** https://medium.com/@devisha.singh/the-kiss-principle-in-software-development-everything-you-need-to-know-dd8ea6e46bcd
+- **NGNIX:** https://nginx.org/en/docs/
+
+[🔝 back to top](#summary)
