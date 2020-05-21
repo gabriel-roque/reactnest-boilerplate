@@ -259,21 +259,13 @@ Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a re
 
 Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como componentes, serviços e função úteis.
 
-**Core Directory Structure**
+| **Core Directory Structure**                          | **math.ts**                                                     |
+| ----------------------------------------------------- | --------------------------------------------------------------- |
+| <img src="web-app/src/assets/github/module-core.png"> | <img src="web-app/src/assets/github/math-util.png" width="500"> |
 
-<img src="web-app/src/assets/github/module-core.png">
-
-**alert.component.tsx**
-
-<img src="web-app/src/assets/github/alert-component.png" width="400">
-
-**randomUser.ts**
-
-<img src="web-app/src/assets/github/random-user-api.png" width="400">
-
-**math.ts**
-
-<img src="web-app/src/assets/github/math-util.png" width="500">
+| **alert.component.tsx**                                    | **randomUser.ts**                                         |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="web-app/src/assets/github/alert-component.png" > | <img src="web-app/src/assets/github/random-user-api.png"> |
 
 [🔝 back to top](#-summary)
 
@@ -311,13 +303,34 @@ Representa um caso de uso da sua aplicação e esplicitamente um requisito funci
   <img src="web-app/src/assets/github/module-example.png">
 </p>
 
+<hr>
+
 #### Layouts
 
 🇺🇸
-In comming...
+
+Certainly your application will need layouts for greater code segregation. In the `layouts` directory you can find the following structure:
+
+- **default**: represents a folder with everything that belongs to the layout;
+- **components**: it must be allocated only the components necessary for the implementation of the layout;
+- **default.layout.tsx**: represents the final layout file;
 
 🇧🇷
-In comming...
+
+Certamente sua aplicação precisará de layouts para maior segregação de código. No diretório `layouts` é possível encontrar a seguinte estrutura:
+
+- **default**: representa uma pasta com tudo que pertence ao layout;
+- **components**: nela deve ser alocado somente os componentes necessários para a implementação do layout;
+- **default.layout.tsx**: representa o arquivo final do layout;
+
+**Layouts Directory Structure**
+
+<p align="center">
+  <img src="web-app/src/assets/github/layouts.png">
+  <img src="web-app/src/assets/github/layout-example.png">
+</p>
+
+<hr>
 
 #### Shared
 
@@ -347,6 +360,8 @@ Por exemplo um botão ou um input com mensagem de erro inclusa.
 </p>
 
 [🔝 back to top](#-summary)
+
+<hr>
 
 ## Style Guide
 
