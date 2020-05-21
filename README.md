@@ -18,11 +18,48 @@
 
 <hr>
 
-## :bulb: Introduction
+## ⚓ Summary
 
-A simple project starter with (Ngnix, Reactjs, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
+- [Introduction](#introduction)
+  - [Motivation](#motivation)
+- [Minimal Requirements](#minimal-requirements)
+- [Features](#features)
+  - [Ngnix](#ngnix)
+  - [PM2](#pm2)
+  - [JWT](#jwt)
+  - [Redux + Redux Thunk](#redux)
+  - [React Router](#react-router)
+  - [Commitlint](#commitlint)
+- [Install](#install)
+  - [Development](#development)
+  - [Production](#production)
+  - [Run App](#run-app)
+- [Web-App](#run-app)
+  - [Why Typescript](#why-typescript)
+  - [File directory](#file-directory)
+  - [Style Guide](#style-guide)
+- [API](#api)
+- [References](#references)
 
-## :memo: Minimal Requirements
+## 💡 Introduction
+
+A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
+
+### 🏃 Motivation
+
+🇺🇸 **EUA**
+
+You may not want to set up a project from scratch, so decide to look for some base templete to design your system without having to deal with many configurations. So maybe ReactDonis is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
+
+ReactDonis does not seek to be a silver bullet (only solution) for all projects, but rather to provide an initial model for the construction of projects.
+
+🇧🇷 **PT-BR**
+
+Talvez você não queira configurar um projeto do zero, então resolve procurar algum templete base para projetar seu sistema sem ter que lidar com muitas configurações. Então talvez o ReactDonis seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
+
+O ReactDonis não procura ser uma bala de prata (única solucação) para todos os projetos e sim prover um modelos inicial para a construção de projetos.
+
+## 📝 Minimal Requirements
 
 - NodeJs 12.x
 - Docker 18.x
@@ -35,13 +72,13 @@ $ git clone https://github.com/gabriel-roque/react-donis-docker-starter
 $ cd react-donis-docker-starter
 ```
 
-## :wrench: Configure in development
+### 🔧 Configure in development
 
 ```
 $ ./entrypoint-dev.sh
 ```
 
-## :wrench: Configure in production
+### 🔧 Configure in production
 
 ```
 $ ./entrypoint-prod.sh
@@ -50,14 +87,21 @@ $ ./entrypoint-prod.sh
 ## 📈 Run app
 
 ```
+$ cd web-app && npm start
 $ docker-compose up -d
 ```
+
+[🔝 back to top](#summary)
 
 > Check **web-app** in http://localhost:3000/ for _**DEVELOPMENT**_
 
 > Check **web-app** in http://localhost/ for _**PRODUCTION**_
 
 > Check **api** in http://localhost:8080
+
+## ⛳ References
+
+- **KISS (Keep it Simple and Stupid):** https://medium.com/@devisha.singh/the-kiss-principle-in-software-development-everything-you-need-to-know-dd8ea6e46bcd
 
 ## 👤 Authors
 
