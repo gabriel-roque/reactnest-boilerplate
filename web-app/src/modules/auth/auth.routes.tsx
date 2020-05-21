@@ -1,9 +1,9 @@
-import { Login } from './pages/Login/login.page';
+import { LoginPage } from './pages/Login/login.page';
 
 export const routesAuth = [
   {
     path: '/login',
-    component: Login,
+    component: LoginPage,
     name: 'auth.login',
     public: true,
   },
