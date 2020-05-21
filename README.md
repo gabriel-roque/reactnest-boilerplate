@@ -280,7 +280,7 @@ It represents a use case for your application and explicitly a functional requir
 - **components**: it must be allocated all the components belonging to the module
 - **pages**: you must add all the pages that refer to this module
 - **store**: must maintain the global status management files of the module provided for in
-  <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">
+  <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture" target="_blank">
   flux architecture
   </a>
 - **module.routes.tsx**: it should be declared all the routes of this module
@@ -292,7 +292,7 @@ Representa um caso de uso da sua aplicação e esplicitamente um requisito funci
 - **components**: nela deverá ser alocados todos os componentes pertencentes ao módulo
 - **pages**: deverá agregar todas as páginas que remetem a este módulo
 - **store**: deve manter os arquivos gerecimento de estado global do módulo prevista na
-  <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">
+  <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture" target="_blank">
   arquitetura flux
   </a>
 - **module.routes.tsx**: nele deverá ser declarados todas as rotas deste módulo
@@ -302,6 +302,8 @@ Representa um caso de uso da sua aplicação e esplicitamente um requisito funci
 <p align="center">
   <img src="web-app/src/assets/github/module-example.png">
 </p>
+
+[🔝 back to top](#-summary)
 
 <hr>
 
@@ -330,6 +332,8 @@ Certamente sua aplicação precisará de layouts para maior segregação de cód
   <img src="web-app/src/assets/github/layout-example.png">
 </p>
 
+[🔝 back to top](#-summary)
+
 <hr>
 
 #### Shared
@@ -357,6 +361,60 @@ Por exemplo um botão ou um input com mensagem de erro inclusa.
 <p align="center">
   <img src="web-app/src/assets/github/shared-components.png">
   <img src="web-app/src/assets/github/component-shared.png">
+</p>
+
+[🔝 back to top](#-summary)
+
+<hr>
+
+#### Config
+
+🇺🇸
+
+Directory responsible for centralizing all application settings such as **navigation, status generation, routes, internal services** and **themes**.
+
+A good example of what should be allocated in `services` are internal services like the API (back-end) and payment gateway integration services like <a href ="https://stripe.com/en-br" target="blank"> Stripe. </a>
+
+Another good example of what should be allocated in `theme` are everything that is directly linked to **application design**, such as **color palette, fonts** and etc.
+
+For more details of the implemented settings click below:
+
+- **Navigation and Routes** [React Router](#react-router)
+- **Managing state** [(Redux + Redux Thunk)](#redux)
+
+🇧🇷
+
+Diretório responsável por centralizar todas configurações da aplicação tais como **navegação, geracimento de estado, rotas, serviços internos** e **temas**.
+
+Um bom exemplo do que deve ser alocado em `services` são serviços internos como a API (back-end) e serviços de integração de gateway de pagamento como a <a href="https://stripe.com/en-br" target="blank">Stripe</a>.
+
+Um outro bom exemplo do que deverá ser alocado em `theme` são tudo que está diretamente ligado ao **design da aplicação**, como **paleta de cores, fontes** e etc.
+
+Para mais detalhes das configurações implementadas clique a baixo:
+
+- **Navegação e Rotas** [React Router](#react-router)
+- **Gereciando de estado** [(Redux + Redux Thunk)](#redux)
+
+<p align="center">
+  <img src="web-app/src/assets/github/config.png">
+</p>
+
+[🔝 back to top](#-summary)
+
+<hr>
+
+#### Assets
+
+🇺🇸
+
+In these directories are all the static files that will be used in the application (front-end) such as **css, images, gifs, media, fonts** and etc.
+
+🇧🇷
+
+Neste diretórios encontra-se todos os arquivos estáticos que serão utilizados na aplicação (front-end) tais como **css, images, gifs, mídias, fontes** e etc.
+
+<p align="center">
+  <img src="web-app/src/assets/github/assets.png">
 </p>
 
 [🔝 back to top](#-summary)
@@ -412,5 +470,6 @@ Give a ⭐️ if this project helped you!
 [Git CZ](https://github.com/commitizen/cz-cli) |
 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) |
 [Conventional Changelog](https://www.conventionalcommits.org/en/v1.0.0/) |
+[Flux Architecture](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture) |
 
 [🔝 back to top](#-summary)
