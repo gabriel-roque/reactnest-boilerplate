@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="web-app/src/assets/img/reactdonis.jpg"/>
+  <img src="web-app/src/assets/img/logos/reactdonis.png"/>
 </p>
 
 <p align="center">
+  <a href="https://app.netlify.com/sites/reactdonis/deploys"><img src="https://api.netlify.com/api/v1/badges/81d22914-c554-4770-975e-a41ba0ddf776/deploy-status"></a>
   <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/ReactJS-16.x-blue"></a>
   <a href="https://redux.js.org/"><img src="https://img.shields.io/badge/Redux-4.0.x-blue"></a>
   <a href="https://github.com/reduxjs/redux-thunk"><img src="https://img.shields.io/badge/Redux Thunk-2.3.x-green"></a>

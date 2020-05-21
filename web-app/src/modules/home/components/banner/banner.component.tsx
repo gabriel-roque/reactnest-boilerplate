@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ReactdonisLogo from 'assets/img/logos/reactdonis.jpg';
+import ReactdonisLogo from 'assets/img/logos/reactdonis.png';
 
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
@@ -18,7 +18,6 @@ export default function Banner() {
 
   return (
     <div className={classes.content}>
-      {/* <div className={classes.bgcover}> */}
       <Container maxWidth="sm">
         <Grid item>
           <img src={ReactdonisLogo} alt="Reactdonis logo" className={classes.reactdonis} />
@@ -39,7 +38,6 @@ export default function Banner() {
           </Grid>
         </div>
       </Container>
-      {/* </div> */}
     </div>
   );
 }
