@@ -36,7 +36,7 @@
   - [Run App](#-run-app)
 - [Web-App](#-web-app)
   - [Why Typescript](#why-typescript)
-  - [File directory](#file-directory)
+  - [Directory Structure](#directory-structure)
   - [Style Guide](#style-guide)
 - [References](#-references)
 
@@ -218,7 +218,7 @@ $ docker-compose up -d
 
 In comming...
 
-### File directory
+### Directory Structure
 
 <hr>
 
@@ -236,6 +236,8 @@ _How to define?_
 
 If so, this part of the application can be easily maintained in the core, if the answer is no, it should be attached to the module that the business rule corresponds to.
 
+You can see through the examples below that in all cases the parts that are allocated within the core module fit within the question. As useful components, services and functions.
+
 🇧🇷
 
 O môdulo core deve conter somente partes da sua aplicação que não possuem nenhuma relação com regra de negócio. Também deve ser alocado ao core module serviços ou instâncias singleton, isto é que só terão apenas uma única instância em toda a aplicação.
@@ -247,6 +249,26 @@ _Como definir?_
 **Resposta**: Simples, se faça a seguinte pergunta. Se eu colocar isso aqui eu posso usar em outro projeto facilmente sem muitas complicações e sem conter alguma regra de négocio?
 
 Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a resposta seja não ela deverá ficar juntamente ao môdulo que a regra de negócio corresponde.
+
+Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como componentes, serviços e função úteis.
+
+**Core Directory Structure**
+
+<p>
+  <img src="web-app/src/assets/github/module-core.png">
+</p>
+
+**alert.component.tsx**
+
+<img src="web-app/src/assets/github/alert-component.png" width="400">
+
+**randomUser.ts**
+
+<img src="web-app/src/assets/github/random-user-api.png" width="400">
+
+**math.ts**
+
+<img src="web-app/src/assets/github/math-util.png" width="500">
 
 <hr>
 
