@@ -165,7 +165,11 @@ In comming...
 
 #### Conventional Changelog
 
+🇺🇸
+
 This project has tools that apply the standards provided for in **RFC 2119** for code change message standardization conventions. To learn more about the tools, we recommend accessing their own documentation.
+
+🇧🇷
 
 Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** pra convenções de padronização de mensagens de alteração de código. Para saber mais sobre as ferramentas recomendamos acessar sua própria documentação.
 
@@ -437,7 +441,7 @@ In working....
 
 ## Name Files
 
-In comming...
+In working....
 
 Se o seu componente possui regra negócio, ele não deverá ficar aqui e sim dentro dos componentes do módulo a que a regra de negócio se referência.
 
