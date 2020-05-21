@@ -1,5 +1,7 @@
 import React from 'react';
 
-export function Login() {
-  return <div />;
+import { Alert } from 'core/components';
+
+export function LoginPage() {
+  return;
 }

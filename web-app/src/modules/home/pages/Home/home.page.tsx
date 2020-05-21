@@ -10,7 +10,7 @@ import { useStyles } from './home.styles';
 
 import { Banner, Card } from 'modules/home/components';
 
-export function Home() {
+export function HomePage() {
   const classes = useStyles();
 
   return (

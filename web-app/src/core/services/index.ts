@@ -1,0 +1,1 @@
+export { randomUserApi } from './randomUser';

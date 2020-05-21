@@ -31,10 +31,10 @@
   - [React Router](#react-router)
   - [Commitlint](#commitlint)
 - [Install](#-install)
-  - [Development](#development)
-  - [Production](#production)
-  - [Run App](#run-app)
-- [Web-App](#-run-app)
+  - [Development](#-development)
+  - [Production](#-production)
+  - [Run App](#-run-app)
+- [Web-App](#-web-app)
   - [Why Typescript](#why-typescript)
   - [File directory](#file-directory)
   - [Style Guide](#style-guide)
@@ -211,6 +211,66 @@ $ docker-compose up -d
 > Check **web-app** in http://localhost/ for _**PRODUCTION**_
 
 > Check **api** in http://localhost:8080
+
+## 🖥️ Web-App
+
+### Why Typescript
+
+In comming...
+
+### File directory
+
+<hr>
+
+**Core**
+
+🇺🇸
+
+The core module should contain only parts of your application that have no relation to a business rule. Services or singleton instances should also be allocated to the core module, that is, they will only have a single instance in the entire application.
+
+_How to define?_
+
+**Question**: How do I know what to put in the core module or not?
+
+**Answer**: Simple, ask yourself the following question. If I put this here can I use it in another project easily without many complications and without containing any business rules?
+
+If so, this part of the application can be easily maintained in the core, if the answer is no, it should be attached to the module that the business rule corresponds to.
+
+🇧🇷
+
+O môdulo core deve conter somente partes da sua aplicação que não possuem nenhuma relação com regra de negócio. Também deve ser alocado ao core module serviços ou instâncias singleton, isto é que só terão apenas uma única instância em toda a aplicação.
+
+_Como definir?_
+
+**Questão**: Como saber o que devo colocar ou não no môdulo core?
+
+**Resposta**: Simples, se faça a seguinte pergunta. Se eu colocar isso aqui eu posso usar em outro projeto facilmente sem muitas complicações e sem conter alguma regra de négocio?
+
+Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a resposta seja não ela deverá ficar juntamente ao môdulo que a regra de negócio corresponde.
+
+<hr>
+
+### Style Guide
+
+Reduza o caminho de importação usando arquivos index como agregadores.
+
+Nome de componentes página devem usar o sufuxo [Login**Page**]
+
+**Assets**
+
+**Configs**
+
+**Core**
+
+**Layouts**
+
+**Modules**
+
+**Name Files**
+
+In comming...
+
+Se o seu componente possui regra negócio, ele não deverá ficar aqui e sim dentro dos componentes do módulo a que a regra de negócio se referência.
 
 ## 👤 Authors
 
