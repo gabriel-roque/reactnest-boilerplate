@@ -259,9 +259,9 @@ Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a re
 
 Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como componentes, serviços e função úteis.
 
-| **Core Directory Structure**                          | **math.ts**                                                     |
-| ----------------------------------------------------- | --------------------------------------------------------------- |
-| <img src="web-app/src/assets/github/module-core.png"> | <img src="web-app/src/assets/github/math-util.png" width="500"> |
+| **Core Directory Structure**                          | **math.ts**                                          |
+| ----------------------------------------------------- | ---------------------------------------------------- |
+| <img src="web-app/src/assets/github/module-core.png"> | <img src="web-app/src/assets/github/math-util.png" > |
 
 | **alert.component.tsx**                                    | **randomUser.ts**                                         |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
