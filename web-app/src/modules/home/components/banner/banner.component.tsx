@@ -23,8 +23,11 @@ export default function Banner() {
           <img src={ReactdonisLogo} alt="Reactdonis logo" className={classes.reactdonis} />
         </Grid>
         <Typography variant="h5" align="justify" color="textSecondary" paragraph>
-          A simple project starter with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker,
-          PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
+          <span role="img" aria-labelledby="tower">
+            🗼
+          </span>
+          A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL,
+          Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
         </Typography>
         <div className={classes.buttons}>
           <Grid container spacing={2} justify="center">

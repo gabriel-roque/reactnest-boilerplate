@@ -36,6 +36,7 @@
   - [Production](#-production)
   - [Run App](#-run-app)
 - [Web-App](#-web-app)
+  - [Advantages](#advantages)
   - [Why Typescript](#why-typescript)
   - [Directory Structure](#directory-structure)
     - [Core](#core)
@@ -44,12 +45,12 @@
     - [Shared](#shared)
     - [Config](#config)
     - [Assets](#assets)
-  - [Style Guide](#style-guide)
+  - [Code Style](#code-style)
 - [References](#-references)
 
 ## 💡 Introduction
 
-A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Conventional Changelog with Commitlint, Husky, Git CZ)
+🗼 A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
 
 ### 🏃 Motivation
 
@@ -224,6 +225,10 @@ $ docker-compose up -d
 > Check **api** in http://localhost:8080
 
 ## 🖥️ Web-App
+
+### Advantages
+
+In comming...
 
 ### Why Typescript
 
@@ -425,25 +430,182 @@ Neste diretórios encontra-se todos os arquivos estáticos que serão utilizados
 
 <hr>
 
-## Style Guide
+## Code Style
 
-Reduza o caminho de importação usando arquivos index como agregadores.
+#### How to name Component
 
-Nome de componentes página devem usar o sufixo **Page** em CamelCase. Ex:
+| Name File              | Name in code                               |
+| ---------------------- | ------------------------------------------ |
+| dot.case               | CamelCase                                  |
+| `<name>.component.tsx` | `export default function <Name>() { ... }` |
 
 ```ts
-  export function LoginPage() {
-    return ()
+  export default function BannerParalax() {
+    return (...)
   }
 ```
 
-In working....
+#### How to name Page Component
 
-## Name Files
+| Name File         | Name in code                             |
+| ----------------- | ---------------------------------------- |
+| dot.case          | CamelCase + Page                         |
+| `<name>.page.tsx` | `export function <NamePage()>() { ... }` |
 
-In working....
+```ts
+  export function LoginPage() {
+    return (...)
+  }
+```
 
-Se o seu componente possui regra negócio, ele não deverá ficar aqui e sim dentro dos componentes do módulo a que a regra de negócio se referência.
+#### How to name Layouts
+
+| Name File           | Name in code                                       |
+| ------------------- | -------------------------------------------------- |
+| dot.case            | CamelCase + Layout                                 |
+| `<name>.layout.tsx` | `export default function <NameLayout()>() { ... }` |
+
+**default.layout.tsx**
+
+```js
+import React from 'react';
+
+import { Footer, AppBar } from 'layouts/default/components';
+
+export function DefaultLayout(props: any) {
+  return (
+    <React.Fragment>
+      <AppBar title="REACTDONIS v.2" />
+      <main>{props.children}</main>
+      <Footer />
+    </React.Fragment>
+  );
+}
+```
+
+Using layout in **home.page.tsx**
+
+```js
+import React from 'react';
+
+import { DefaultLayout } from 'layouts';
+
+export function HomePage() {
+  return (
+    <DefaultLayout>
+      <div>...</div>
+    </DefaultLayout>
+  );
+}
+```
+
+#### How to name styles
+
+| Name File           | Name in code                                               |
+| ------------------- | ---------------------------------------------------------- |
+| dot.case            | CamelCase + Page                                           |
+| `<name>.styles.tsx` | `export const useStyles = makeStyles(theme => ({ ... }));` |
+
+```ts
+import { makeStyles } from '@material-ui/core/styles';
+
+export const useStyles = makeStyles(theme => ({
+  ...
+}));
+```
+
+#### How to name Routes
+
+| Name File                  | Name in code                              |
+| -------------------------- | ----------------------------------------- |
+| dot.case                   | routes + CamelCase                        |
+| `<name module>.routes.tsx` | `export const routes<NameModule> = [...]` |
+
+| path          | component             | name                             | public                     |
+| ------------- | --------------------- | -------------------------------- | -------------------------- |
+| Path fo Route | Component will Render | `<name module>.<name-component>` | Is route public or private |
+
+```ts
+import { LoginPage } from './pages/Login/login.page';
+
+export const routesAuth = [
+  {
+    path: '/login',
+    component: LoginPage,
+    name: 'auth.login-page',
+    public: false,
+  },
+];
+```
+
+#### How to name mocks
+
+| Name File               |
+| ----------------------- |
+| dot.case                |
+| `<name module>.mock.ts` |
+| **cards.mocks.ts**      |
+
+#### How to name files redux store
+
+| Actions/Dispatchs | Reducers                 | State Module            | Types      |
+| ----------------- | ------------------------ | ----------------------- | ---------- |
+| CamelCase         | `case types.<NAME_TYPE>` | `INITIAL_STATE = {...}` | UPPER_CASE |
+| actions.ts        | reducer.ts               | state.ts                | types.ts   |
+
+**actions.ts**
+
+```ts
+import * as types from './types';
+
+export const setData = (data) => {
+  return (dispatch) => {
+    dispatch({ types: types.SET_DATA_EXAMPLE, data });
+  };
+};
+```
+
+**reducer.ts**
+
+```ts
+import { INITIAL_STATE } from './state';
+import * as types from './types';
+
+export default (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case types.SET_DATA_EXAMPLE:
+      return { ...state, ...action.data };
+    default:
+      return state;
+  }
+};
+```
+
+**state.ts**
+
+```ts
+export const INITIAL_STATE = {
+  data: 'example data share in redux',
+};
+```
+
+**types.ts**
+
+```ts
+export const SET_DATA_EXAMPLE = 'SET_DATA_EXAMPLE';
+```
+
+🇺🇸
+
+To understand more of the advantages of this code style click [here](#advantages).
+
+🇧🇷
+
+Para entender mais das vantagens desse code style clique [aqui](#advantages).
+
+[🔝 back to top](#-summary)
+
+<hr>
 
 ## 👤 Authors
 

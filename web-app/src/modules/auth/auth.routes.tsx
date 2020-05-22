@@ -5,6 +5,6 @@ export const routesAuth = [
     path: '/login',
     component: LoginPage,
     name: 'auth.login',
-    public: true,
+    public: false,
   },
 ];
