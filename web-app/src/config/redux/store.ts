@@ -3,9 +3,10 @@ import thunk from 'redux-thunk';
 
 // Import new modules redux here
 import auth from 'modules/auth/store/reducer';
+import home from 'modules/home/store/reducer';
 
 // Connect new modules redux here
-const reducers = combineReducers({ auth });
+const reducers = combineReducers({ auth, home });
 
 declare global {
   interface Window {

@@ -12,6 +12,7 @@ import { useStyles } from './banner.styles';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { StatusRepositore } from 'modules/home/components';
 
 export default function Banner() {
   const classes = useStyles();
@@ -32,7 +33,7 @@ export default function Banner() {
         <div className={classes.buttons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <Link href="https://github.com/gabriel-roque" target="_blank">
+              <Link href="https://github.com/gabriel-roque/react-donis-docker-starter" target="_blank">
                 <Button variant="contained" color="default" size="large" className={classes.btnGithub}>
                   <FontAwesomeIcon icon={faGithub} size="lg" className={classes.githubIcon} /> <b>Get started</b>
                 </Button>
@@ -40,6 +41,7 @@ export default function Banner() {
             </Grid>
           </Grid>
         </div>
+        <StatusRepositore />
       </Container>
     </div>
   );

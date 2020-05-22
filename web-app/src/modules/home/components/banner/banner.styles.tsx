@@ -11,7 +11,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('md')]: {
       backgroundImage: `url(${ReactLogo})`,
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: '100% -120%',
+      backgroundPosition: '100% -300%;',
     },
   },
   buttons: {
@@ -30,5 +30,8 @@ export const useStyles = makeStyles(theme => ({
   },
   reactdonis: {
     width: '100%',
+  },
+  badges: {
+    marginTop: 25,
   },
 }));
