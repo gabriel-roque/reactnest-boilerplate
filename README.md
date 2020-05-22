@@ -46,6 +46,8 @@
     - [Config](#config)
     - [Assets](#assets)
   - [Code Style](#code-style)
+    - [Import Helpers](#import-group-helpers)
+    - [Example Component](#example-component)
 - [References](#-references)
 
 ## 💡 Introduction
@@ -228,7 +230,64 @@ $ docker-compose up -d
 
 ### Advantages
 
-In comming...
+🇺🇸
+
+It should be noted that the advantages here highlighted are not all, but the main ones that can change the way you build your applications. Each and every feature present in the temple is completely motifable to suit the needs of your project if you need it.
+
+🇧🇷
+
+Cabe ressaltar que as vantagens aqui destacas não são todas, mas sim as principais que podem mudar a forma como você constroe suas aplicações. Toda e qualquer funcionalidade presente sente temple é completamente motificável para adequar as necessidades de seu projeto caso necessite.
+
+**1. Easy search | Busca fácil**
+
+🇺🇸
+
+Easily find any part of your application in your project using the naming pattern, for more advantages of this approach see **code style** [angular](https://angular.io/guide/styleguide).
+
+This approach allows easy search and integration with search engines, whether from your IDEA or from a repository such as GitHub.
+
+🇧🇷
+
+Encontre facilmente qualquer parte da sua aplicação em seu projeto com o uso de padrão de nomeação, para mais vantagens dessa abordagem consulte o **code style** [angular](https://angular.io/guide/styleguide).
+
+Essa abordagem permite uma fácil busca e integração com buscadores sejam de sua IDEA ou de repositório como o GitHub.
+
+<img src="web-app/src/assets/github/github-find.png">
+<p align="center">
+  <img src="web-app/src/assets/github/vscode-find.png">
+<p>
+
+**2. Opined and defined | Opinado e definido**
+
+🇺🇸
+
+As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way ** ReactDonis** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
+
+That is, ReactDonis defines a guide for your project, but nothing will stop you from making your changes, feel free to contribute.
+
+🇧🇷
+
+Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **ReactDonis** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturis, tecnologias e etc.
+
+Isto é, o ReactDonis define um guia para o seu projeto, porém nada o impedirá de fazer suas modificações, fique a vontade para contribuir.
+
+**3. Based on Conventions and Styles Popular Guides | Baseado em Convenções e Styles Guides Populares**
+
+🇺🇸
+
+In such a vast universe of technologies, there are norms and standards for almost everything. In this way, some code standards were also adopted or commonly known as Style Guides or Codes Style. The Style guide used for the front-end was based on the [JavaScript Standard Style](https://standardjs.com/) and the [Fuse](http://fusetheme.com/) for **React and Angular**.
+
+If you want to adopt another Style Guide, feel free to define one that meets the needs of your project.
+
+🇧🇷
+
+Em um universo tão vasto de tecnologias, existem normas e padrões para quase tudo. Desta forma também foi adotado alguns padrões de código ou porpulamente conhecido como Style Guides ou Codes Style. O Style guide utilizado para a front-end foi baseado no [JavaScript Standard Style](https://standardjs.com/) e no templete [Fuse](http://fusetheme.com/) para **React e Angular**.
+
+Se você desejar adotar outro Style Guide fique completamente a vontade para definir um que se atenda as necessidade do seu projeto.
+
+[🔝 back to top](#-summary)
+
+<hr>
 
 ### Why Typescript
 
@@ -434,7 +493,7 @@ Neste diretórios encontra-se todos os arquivos estáticos que serão utilizados
 
 #### How to name Component
 
-| Name File              | Name in code                               |
+| Name File              | Symbol Name                                |
 | ---------------------- | ------------------------------------------ |
 | dot.case               | CamelCase                                  |
 | `<name>.component.tsx` | `export default function <Name>() { ... }` |
@@ -447,7 +506,7 @@ Neste diretórios encontra-se todos os arquivos estáticos que serão utilizados
 
 #### How to name Page Component
 
-| Name File         | Name in code                             |
+| Name File         | Symbol Name                              |
 | ----------------- | ---------------------------------------- |
 | dot.case          | CamelCase + Page                         |
 | `<name>.page.tsx` | `export function <NamePage()>() { ... }` |
@@ -460,7 +519,7 @@ Neste diretórios encontra-se todos os arquivos estáticos que serão utilizados
 
 #### How to name Layouts
 
-| Name File           | Name in code                                       |
+| Name File           | Symbol Name                                        |
 | ------------------- | -------------------------------------------------- |
 | dot.case            | CamelCase + Layout                                 |
 | `<name>.layout.tsx` | `export default function <NameLayout()>() { ... }` |
@@ -501,7 +560,7 @@ export function HomePage() {
 
 #### How to name styles
 
-| Name File           | Name in code                                               |
+| Name File           | Symbol Name                                                |
 | ------------------- | ---------------------------------------------------------- |
 | dot.case            | CamelCase + Page                                           |
 | `<name>.styles.tsx` | `export const useStyles = makeStyles(theme => ({ ... }));` |
@@ -516,7 +575,7 @@ export const useStyles = makeStyles(theme => ({
 
 #### How to name Routes
 
-| Name File                  | Name in code                              |
+| Name File                  | Symbol Name                               |
 | -------------------------- | ----------------------------------------- |
 | dot.case                   | routes + CamelCase                        |
 | `<name module>.routes.tsx` | `export const routes<NameModule> = [...]` |
@@ -637,5 +696,6 @@ Give a ⭐️ if this project helped you!
 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) |
 [Conventional Changelog](https://www.conventionalcommits.org/en/v1.0.0/) |
 [Flux Architecture](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture) |
+[Style Guides](https://standardjs.com/) |
 
 [🔝 back to top](#-summary)
