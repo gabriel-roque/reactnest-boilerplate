@@ -22,7 +22,7 @@
 
 - [Introduction](#-introduction)
   - [Motivation](#-motivation)
-- [Minimal Requirements](#minimal-requirements)
+- [Minimal Requirements](#-minimal-requirements)
 - [Features](#-features)
   - [Ngnix](#ngnix)
   - [PM2](#pm2)
@@ -30,10 +30,10 @@
   - [Redux + Redux Thunk](#redux)
   - [Redux DevTools](#redux-devtools)
   - [React Router](#react-router)
-  - [Commitlint](#commitlint)
+  - [Conventional Changelog](#conventional-changelog)
 - [Install](#-install)
-  - [Development](#-development)
-  - [Production](#-production)
+  - [Development](#-configure-in-development)
+  - [Production](#-configure-in-production)
   - [Run App](#-run-app)
 - [Web-App](#-web-app)
   - [Advantages](#advantages)
@@ -67,6 +67,8 @@ ReactDonis does not seek to be a silver bullet (only solution) for all projects,
 Talvez você não queira configurar um projeto do zero, então resolve procurar algum templete base para projetar seu sistema sem ter que lidar com muitas configurações. Então talvez o ReactDonis seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
 
 O ReactDonis não procura ser uma bala de prata (única solucação) para todos os projetos e sim prover um modelos inicial para a construção de projetos.
+
+[🔝 back to top](#-summary)
 
 ## 🎉 Features
 
@@ -218,13 +220,13 @@ $ cd web-app && npm start
 $ docker-compose up -d
 ```
 
-[🔝 back to top](#-summary)
-
 > Check **web-app** in http://localhost:3000/ for _**DEVELOPMENT**_
 
 > Check **web-app** in http://localhost/ for _**PRODUCTION**_
 
 > Check **api** in http://localhost:8080
+
+[🔝 back to top](#-summary)
 
 ## 🖥️ Web-App
 
@@ -261,7 +263,7 @@ Essa abordagem permite uma fácil busca e integração com buscadores sejam de s
 
 🇺🇸
 
-As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way ** ReactDonis** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
+As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way **ReactDonis** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
 
 That is, ReactDonis defines a guide for your project, but nothing will stop you from making your changes, feel free to contribute.
 
