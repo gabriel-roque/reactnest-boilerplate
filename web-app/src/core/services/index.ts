@@ -1,2 +1,2 @@
-export { randomUserApi } from './randomUser';
-export { github } from './github';
+export { randomUserApi } from './randomUser.services';
+export { github } from './github.services';
