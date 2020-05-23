@@ -151,7 +151,6 @@ Ao executar em produção você terá um resultado semelhante a 2 instâncias da
 
 <p align="center">
   <img src="web-app/src/assets/github/pm2-cluster.png">
-  <img src="web-app/src/assets/github/pm2-monit.png">
 </p>
 
 [🔝 back to top](#-summary)
@@ -329,13 +328,9 @@ Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a re
 
 Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como **componentes, serviços e função úteis**.
 
-| **Core Directory Structure**                          | **math.ts**                                          |
-| ----------------------------------------------------- | ---------------------------------------------------- |
-| <img src="web-app/src/assets/github/module-core.png"> | <img src="web-app/src/assets/github/math-util.png" > |
-
-| **alert.component.tsx**                                    | **randomUser.ts**                                         |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
-| <img src="web-app/src/assets/github/alert-component.png" > | <img src="web-app/src/assets/github/random-user-api.png"> |
+<p align="center">
+  <img src="web-app/src/assets/github/module-core.png">
+</p>
 
 [🔝 back to top](#-summary)
 
@@ -398,7 +393,6 @@ Certamente sua aplicação precisará de layouts para maior segregação de cód
 **Layouts Directory Structure**
 
 <p align="center">
-  <img src="web-app/src/assets/github/layouts.png">
   <img src="web-app/src/assets/github/layout-example.png">
 </p>
 
@@ -429,7 +423,6 @@ Neste diretório deverá ser alocados todos os componentes onde:
 Por exemplo um botão ou um input com mensagem de erro inclusa.
 
 <p align="center">
-  <img src="web-app/src/assets/github/shared-components.png">
   <img src="web-app/src/assets/github/component-shared.png">
 </p>
 
