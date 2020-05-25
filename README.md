@@ -27,9 +27,8 @@
   - [Ngnix](#ngnix)
   - [PM2](#pm2)
   - [JWT](#jwt)
-  - [Redux + Redux Thunk](#redux)
-  - [Redux DevTools](#redux-devtools)
   - [React Router](#react-router)
+  - [Redux + DevTools](#redux)
   - [Conventional Changelog](#conventional-changelog)
 - [Install](#-install)
   - [Development](#-configure-in-development)
@@ -58,15 +57,15 @@
 
 🇺🇸 **EUA**
 
-You may not want to set up a project from scratch, so decide to look for some base templete to design your system without having to deal with many configurations. So maybe ReactDonis is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
+You may not want to set up a project from scratch, so you decide to look for some base templete to design your system, without having to deal with many configurations. So maybe ReactDonis is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
 
 ReactDonis does not seek to be a silver bullet (only solution) for all projects, but rather to provide an initial model for the construction of projects.
 
 🇧🇷 **PT-BR**
 
-Talvez você não queira configurar um projeto do zero, então resolve procurar algum templete base para projetar seu sistema sem ter que lidar com muitas configurações. Então talvez o ReactDonis seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
+Talvez você não queira configurar um projeto do zero, então você resolve procurar algum templete base para projetar seu sistema, sem ter que lidar com muitas configurações. Então talvez o ReactDonis seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
 
-O ReactDonis não procura ser uma bala de prata (única solucação) para todos os projetos e sim prover um modelos inicial para a construção de projetos.
+O ReactDonis não procura ser uma bala de prata (única solução) para todos os projetos e sim prover um modelo inicial para a construção de projetos.
 
 [🔝 back to top](#-summary)
 
@@ -76,11 +75,11 @@ O ReactDonis não procura ser uma bala de prata (única solucação) para todos 
 
 🇺🇸
 
-Ngnix comes with a basic configuration, for more configurations just open the `default.conf` file in the `ngnix/config/default.conf` directory of this project. For more details on Ngnix settings access the documentation <a href="https://nginx.org/en/docs/" target="_blank">here</a>
+Ngnix comes with a basic configuration, for more configurations just open the `default.conf` file in the `ngnix/config/default.conf` directory of this project. For more details on Ngnix settings access the documentation <a href="https://nginx.org/en/docs/" target="_blank">here</a>.
 
 🇧🇷
 
-O Ngnix vem com uma configuração básica, para mais configurações basta abrir o arquivo `default.conf` no diretório `ngnix/config/default.conf` deste projeto. Para mais detalhes sobre configurações do Ngnix acesse a documenteção <a href="https://nginx.org/en/docs/" target="_blank">aqui</a>
+O Ngnix vem com uma configuração básica, para mais configurações basta abrir o arquivo `default.conf` no diretório `ngnix/config/default.conf` deste projeto. Para mais detalhes sobre configurações do Ngnix acesse a documenteção <a href="https://nginx.org/en/docs/" target="_blank">aqui</a>.
 
 **default.conf**
 
@@ -111,11 +110,11 @@ server {
 
 🇺🇸
 
-The use of PM2 is only used in **production configurations**. PM2 is an advanced manager for nodejs processes. You can learn more about PM2 and its features <a href="https://pm2.keymetrics.io/" target="_blank">here</a> The PM2 configuration file can be found at `api/ecosystem.config.js`
+The use of PM2 is only used in **production configurations**. PM2 is an advanced manager for NodeJS processes. You can learn more about PM2 and its features <a href="https://pm2.keymetrics.io/" target="_blank">here</a> The PM2 configuration file can be found at `api/ecosystem.config.js`
 
 🇧🇷
 
-O uso do PM2 é somente utilizado em **configurações para produção**. O PM2 é um gerenciador avançado para processos nodejs. Você pode saber mais sobre o PM2 e suas funcionalidades <a href="https://pm2.keymetrics.io/" target="_blank">aqui</a>. O arquivo de configuração do PM2 se encontra em `api/ecosystem.config.js`
+O uso do PM2 é somente utilizado em **configurações para produção**. O PM2 é um gerenciador avançado para processos NodeJS. Você pode saber mais sobre o PM2 e suas funcionalidades <a href="https://pm2.keymetrics.io/" target="_blank">aqui</a>. O arquivo de configuração do PM2 se encontra em `api/ecosystem.config.js`
 
 **ecosystem.config.js**
 
@@ -157,15 +156,15 @@ Ao executar em produção você terá um resultado semelhante a 2 instâncias da
 
 #### JWT
 
-In comming...
+Soon more explanations...
 
 #### Redux + Redux Thunk
 
-In comming...
+Soon more explanations...
 
 #### React Router
 
-In comming...
+Soon more explanations...
 
 #### Conventional Changelog
 
@@ -176,6 +175,11 @@ This project has tools that apply the standards provided for in **RFC 2119** for
 🇧🇷
 
 Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** pra convenções de padronização de mensagens de alteração de código. Para saber mais sobre as ferramentas recomendamos acessar sua própria documentação.
+
+<p align="center">
+  <img src="web-app/src/assets/github/commitlint.svg" width="600">
+  <img src="web-app/src/assets/github/git-cz.png" >
+</p>
 
 | Tools & RFC                                                              |
 | ------------------------------------------------------------------------ |
@@ -233,11 +237,11 @@ $ docker-compose up -d
 
 🇺🇸
 
-It should be noted that the advantages here highlighted are not all, but the main ones that can change the way you build your applications. Each and every feature present in the temple is completely motifable to suit the needs of your project if you need it.
+It should be noted that the advantages here highlighted are not all, but the main ones that can change the way you build your applications. Any and all functionality present in templete is completely modifiable to suit the needs of your project if you need it.
 
 🇧🇷
 
-Cabe ressaltar que as vantagens aqui destacas não são todas, mas sim as principais que podem mudar a forma como você constroe suas aplicações. Toda e qualquer funcionalidade presente sente temple é completamente motificável para adequar as necessidades de seu projeto caso necessite.
+Cabe ressaltar que as vantagens aqui destacas não são todas, mas sim as principais que podem mudar a forma como você constroe suas aplicações. Toda e qualquer funcionalidade presente sente templete é completamente modificável para adequar as necessidades de seu projeto caso necessite.
 
 **1. Easy search | Busca fácil**
 
@@ -268,7 +272,7 @@ That is, ReactDonis defines a guide for your project, but nothing will stop you 
 
 🇧🇷
 
-Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **ReactDonis** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturis, tecnologias e etc.
+Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **ReactDonis** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturais, tecnologias e etc.
 
 Isto é, o ReactDonis define um guia para o seu projeto, porém nada o impedirá de fazer suas modificações, fique a vontade para contribuir.
 
@@ -292,7 +296,7 @@ Se você desejar adotar outro Style Guide fique completamente a vontade para def
 
 ### Why Typescript
 
-In comming...
+Soon more explanations...
 
 ### Directory Structure
 
@@ -302,31 +306,31 @@ In comming...
 
 🇺🇸
 
-The core module should contain only parts of your application that have no relation to a business rule. Services or singleton instances should also be allocated to the core module, that is, they will only have a single instance in the entire application.
+The **core** module should contain only parts of your application that **have no** relationship to **business rule**. It should also be allocated to the core **providers or singleton instances**, that is, they will only have a single instance in the entire application.
 
 _How to define?_
 
-**Question**: How do I know what to put in the core module or not?
+**Question**: How do I know what to put on the core module and what not?
 
 **Answer**: Simple, ask yourself the following question. If I put this here can I use it in another project easily without many complications and without containing any business rules?
 
 If so, this part of the application can be easily maintained in the core, if the answer is no, it should be attached to the module that the business rule corresponds to.
 
-You can see through the examples below that in all cases the parts that are allocated within the core module fit within the question. As useful **components, services and functions**.
+You can see through the examples below, that in all cases the parts that are allocated within the core module fit within the question. Like **useful components, providers and function**.
 
 🇧🇷
 
-O môdulo core deve conter somente partes da sua aplicação que não possuem nenhuma relação com regra de negócio. Também deve ser alocado ao core module serviços ou instâncias singleton, isto é que só terão apenas uma única instância em toda a aplicação.
+O môdulo **core** deve conter somente partes da sua aplicação que **não possuem nenhuma** relação com **regra de negócio**. Também deve ser alocado ao core **provedores ou instâncias singleton**, isto é que só terão apenas uma única instância em toda a aplicação.
 
 _Como definir?_
 
-**Questão**: Como saber o que devo colocar ou não no môdulo core?
+**Pergunta**: Como saber o que devo colocar ou não no môdulo core?
 
 **Resposta**: Simples, se faça a seguinte pergunta. Se eu colocar isso aqui eu posso usar em outro projeto facilmente sem muitas complicações e sem conter alguma regra de négocio?
 
 Se sim, esta parte da aplicação pode ser matinda facilmente na core, caso a resposta seja não ela deverá ficar juntamente ao môdulo que a regra de negócio corresponde.
 
-Você pode percebe através dos exemplos abaixo que em todos os casos as partes que estão alocadas dentro do móculo core se encaixam dentro da pergunta. Como **componentes, serviços e função úteis**.
+Você pode percebe através dos exemplos abaixo, que em todos os casos as partes que estão alocadas dentro do módulo core se encaixam dentro da pergunta. Como **componentes, provedores e função úteis**.
 
 <p align="center">
   <img src="web-app/src/assets/github/module-core.png">
@@ -342,25 +346,25 @@ Você pode percebe através dos exemplos abaixo que em todos os casos as partes 
 
 It represents a use case for your application and explicitly a functional requirement. For example a Product CRUD. Certainly what is inside the module directory has a business rule included. It contains the following directories:
 
-- **components**: it must be allocated all the components belonging to the module
-- **pages**: you must add all the pages that refer to this module
+- **components**: it must be allocated all the components belonging to the module;
+- **pages**: you must add all the pages that refer to this module;
 - **store**: must maintain the global status management files of the module provided for in
   <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture" target="_blank">
-  flux architecture
+  flux architecture;
   </a>
-- **module.routes.tsx**: it should be declared all the routes of this module
+- **auth.routes.tsx**: it should be declared all the routes of this module.
 
 🇧🇷
 
-Representa um caso de uso da sua aplicação e esplicitamente um requisito funcional. Por exemplo um CRUD de Produtos. Certamente o que está dentro do diretório de modulos possui uma regra de negócio inclusa. Ela contem os seguintes diretórios:
+Representa um caso de uso da sua aplicação e esplicitamente um requisito funcional. Por exemplo, um CRUD de Produtos. Certamente o que está dentro do diretório de modulos possui uma regra de negócio inclusa. Ela contem os seguintes diretórios:
 
-- **components**: nela deverá ser alocados todos os componentes pertencentes ao módulo
-- **pages**: deverá agregar todas as páginas que remetem a este módulo
-- **store**: deve manter os arquivos gerecimento de estado global do módulo prevista na
+- **components**: nela deverá ser alocados todos os componentes pertencentes ao módulo;
+- **pages**: deverá agregar todas as páginas que remetem a este módulo;
+- **store**: deve manter os arquivos de gerecimento de estado global do módulo prevista na
   <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture" target="_blank">
-  arquitetura flux
+  arquitetura flux;
   </a>
-- **module.routes.tsx**: nele deverá ser declarados todas as rotas deste módulo
+- **auth.routes.tsx**: nele deverá ser declarados todas as rotas deste módulo;
 
 **Modules Directory Structure**
 
@@ -443,7 +447,7 @@ Another good example of what should be allocated in `theme` are everything that 
 For more details of the implemented settings click below:
 
 - **Navigation and Routes** [React Router](#react-router)
-- **Managing state** [(Redux + Redux Thunk)](#redux)
+- **Managing state** [(Redux + DevTools)](#redux)
 
 🇧🇷
 
@@ -456,7 +460,7 @@ Um outro bom exemplo do que deverá ser alocado em `theme` são tudo que está d
 Para mais detalhes das configurações implementadas clique a baixo:
 
 - **Navegação e Rotas** [React Router](#react-router)
-- **Gereciando de estado** [(Redux + Redux Thunk)](#redux)
+- **Gereciando de estado** [(Redux + DevTools)](#redux)
 
 <p align="center">
   <img src="web-app/src/assets/github/config.png">
@@ -470,11 +474,11 @@ Para mais detalhes das configurações implementadas clique a baixo:
 
 🇺🇸
 
-In these directories are all the static files that will be used in the application (front-end) such as **css, images, gifs, media, fonts** and etc.
+In these directorie are all the static files that will be used in the application (front-end) such as **css, images, gifs, media, fonts** and etc.
 
 🇧🇷
 
-Neste diretórios encontra-se todos os arquivos estáticos que serão utilizados na aplicação (front-end) tais como **css, images, gifs, mídias, fontes** e etc.
+Neste diretório encontra-se todos os arquivos estáticos que serão utilizados na aplicação (front-end) tais como **css, images, gifs, mídias, fontes** e etc.
 
 <p align="center">
   <img src="web-app/src/assets/github/assets.png">
