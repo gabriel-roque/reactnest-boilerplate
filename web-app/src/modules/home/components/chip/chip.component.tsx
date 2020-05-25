@@ -13,7 +13,7 @@ export default function Chip(props: Props) {
 
   return (
     <span className={classes.chip}>
-      {props.icon} {props.label} <span className={classes.circle}> {props.count}</span>
+      {props.icon} {props.label} <span className={classes.circle}> {props.count ? props.count : '---'}</span>
     </span>
   );
 }

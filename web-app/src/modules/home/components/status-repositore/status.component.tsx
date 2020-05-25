@@ -8,6 +8,7 @@ import { useStyles } from './status.styles';
 import { faCodeBranch, faStar, faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Chip } from 'modules/home/components';
+import { LoadingBar } from 'modules/home/components';
 import { getForksRepositores, getStarsRepositores, getWatchsRepositores } from 'modules/home/store/actions';
 
 function StatusRepositore(props: any) {
@@ -21,6 +22,8 @@ function StatusRepositore(props: any) {
 
   return (
     <Grid container spacing={2} justify="center" className={classes.badges}>
+      {props.repositore.error && <LoadingBar failedLoad={props.repositore.error} />}
+
       <Grid item>
         <Chip label="Stars" icon={<FontAwesomeIcon icon={faStar} />} count={props.repositore.stars.length} />
       </Grid>

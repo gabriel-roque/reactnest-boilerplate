@@ -9,6 +9,8 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, repositore: { ...state.repositore, forks: action.data } };
     case types.GET_WATCHS_REPOSITORE:
       return { ...state, repositore: { ...state.repositore, watchs: action.data } };
+    case types.FAILED_GITHUB_API:
+      return { ...state, repositore: { ...state.repositore, error: true } };
     default:
       return state;
   }

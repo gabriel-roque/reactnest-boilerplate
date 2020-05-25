@@ -3,5 +3,6 @@ export const INITIAL_STATE = {
     stars: 0,
     watchs: 0,
     forks: 0,
+    error: false,
   },
 };
