@@ -1,6 +1,6 @@
 import * as types from './types';
 
-import { github } from 'core/services';
+import { github } from 'core/providers';
 
 export const getStarsRepositores = () => {
   return async dispatch => {
