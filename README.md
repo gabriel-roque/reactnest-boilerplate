@@ -667,11 +667,14 @@ Para entender mais das vantagens desse code style clique [aqui](#advantages).
 
 ## 👤 Authors
 
-| Gabriel Roque                                                                       |
-| ----------------------------------------------------------------------------------- |
-| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110"> |
-| <a href="https://github.com/gabriel-roque">Github</a>                               |
-| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a>                   |
+<p align="center">
+  <a href="https://www.linkedin.com/in/gabriel-roque/">
+    <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-left.png?raw=true" width="400">
+  </a>
+  <a href="https://github.com/gabriel-roque">
+    <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-right.png?raw=true" width="343">
+  </a>
+</p>
 
 ## 🤝 Contributing
 
