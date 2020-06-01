@@ -45,8 +45,7 @@
     - [Config](#config)
     - [Assets](#assets)
   - [Code Style](#code-style)
-    - [Import Helpers](#import-group-helpers)
-    - [Example Component](#example-component)
+  - [Import Helpers](#import-group-helpers)
 - [References](#-references)
 
 ## 💡 Introduction
@@ -156,9 +155,9 @@ Ao executar em produção você terá um resultado semelhante a 2 instâncias da
 
 #### JWT
 
-Soon more explanations...
+Soon more explanations...(under implemetation)
 
-#### Redux + Redux Thunk
+#### Redux
 
 Soon more explanations...
 
