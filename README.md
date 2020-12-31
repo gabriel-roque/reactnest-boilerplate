@@ -26,7 +26,6 @@
 - [Features](#-features)
   - [Ngnix](#ngnix)
   - [PM2](#pm2)
-  - [JWT](#jwt)
   - [React Router](#react-router)
   - [Redux + DevTools](#redux)
   - [Conventional Changelog](#conventional-changelog)
