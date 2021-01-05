@@ -18,7 +18,7 @@
     "@types/node": "^12.12.31",
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^4.9.8",
