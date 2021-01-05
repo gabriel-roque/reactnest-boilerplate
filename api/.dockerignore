@@ -1,5 +1,4 @@
 Dockerfile
-.dockerignore
 .git/
 .gitignore
 node_modules/
