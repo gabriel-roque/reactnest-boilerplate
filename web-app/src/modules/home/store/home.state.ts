@@ -1,5 +1,5 @@
 export const INITIAL_STATE = {
-  repositore: {
+  repository: {
     stars: 0,
     watchs: 0,
     forks: 0,

@@ -12,7 +12,7 @@ import { useStyles } from './banner.styles';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { StatusRepositore } from 'modules/home/components';
+import { StatusRepository } from 'modules/home/components';
 
 export default function Banner() {
   const classes = useStyles();
@@ -41,7 +41,7 @@ export default function Banner() {
             </Grid>
           </Grid>
         </div>
-        <StatusRepositore />
+        <StatusRepository />
       </Container>
     </div>
   );
