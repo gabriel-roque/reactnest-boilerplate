@@ -1,4 +1,4 @@
-import * as types from './types';
+import * as types from './auth.types';
 
 export const setData = data => {
   return dispatch => {

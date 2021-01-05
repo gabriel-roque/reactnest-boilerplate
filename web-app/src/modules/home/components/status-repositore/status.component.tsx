@@ -9,7 +9,7 @@ import { faCodeBranch, faStar, faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Chip } from 'modules/home/components';
 import { LoadingBar } from 'modules/home/components';
-import { getForksRepositores, getStarsRepositores, getWatchsRepositores } from 'modules/home/store/actions';
+import { getForksRepositores, getStarsRepositores, getWatchsRepositores } from 'modules/home/store/home.actions';
 
 function StatusRepositore(props: any) {
   const classes = useStyles();
@@ -18,6 +18,7 @@ function StatusRepositore(props: any) {
     props.getStars();
     props.getForks();
     props.getWatchs();
+    // eslint-disable-next-line
   }, []);
 
   return (

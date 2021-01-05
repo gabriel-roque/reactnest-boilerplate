@@ -1,0 +1,1 @@
+export const SET_DATA_EXAMPLE = '[AUTH] SET_DATA_EXAMPLE';

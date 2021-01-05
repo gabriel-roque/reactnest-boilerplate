@@ -2,8 +2,8 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 // Import new modules redux here
-import auth from 'modules/auth/store/reducer';
-import home from 'modules/home/store/reducer';
+import auth from 'modules/auth/store/auth.reducer';
+import home from 'modules/home/store/home.reducer';
 
 // Connect new modules redux here
 const reducers = combineReducers({ auth, home });

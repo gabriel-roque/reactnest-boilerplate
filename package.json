@@ -1,11 +1,8 @@
 {
   "name": "react-donis-docker-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple templete start with ReactJs and AdonisJs",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gabriel-roque/react-donis-docker-starter.git"

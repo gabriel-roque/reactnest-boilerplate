@@ -35,7 +35,6 @@
   - [Run App](#-run-app)
 - [Web-App](#-web-app)
   - [Advantages](#advantages)
-  - [Why Typescript](#why-typescript)
   - [Directory Structure](#directory-structure)
     - [Core](#core)
     - [Modules](#modules)
@@ -152,17 +151,32 @@ Ao executar em produção você terá um resultado semelhante a 2 instâncias da
 
 [🔝 back to top](#-summary)
 
-#### JWT
-
-Soon more explanations...(under implemetation)
-
 #### Redux
 
 Soon more explanations...
 
 #### React Router
 
-Soon more explanations...
+🇺🇸
+
+To simplify route management, each module has a route file
+which you are responsible for grouping and organizing. In this boilerplate, the route file has a property called **public** that aims to point out whether it is a public or private route. It is up to you to implement the best route security strategy.
+
+🇧🇷
+
+Para simplificar o gerenciamento de rotas, cada módulo possui um arquivo de rotas
+do qual é responsável de agrupar e organizar. Neste boilerplate o arquivo de rotas possui a uma propriedade chamada de **public** que tem como o propósito apontar se é uma rota pública ou privada. Fica a seu critério implementar a melhor estratégia de segurança de rotas.
+
+```ts
+export const routesHome = [
+  {
+    path: '/',
+    component: HomePage,
+    name: 'home.home',
+    public: true,
+  },
+];
+```
 
 #### Conventional Changelog
 
@@ -292,13 +306,7 @@ Se você desejar adotar outro Style Guide fique completamente a vontade para def
 
 <hr>
 
-### Why Typescript
-
-Soon more explanations...
-
 ### Directory Structure
-
-<hr>
 
 #### Core
 
@@ -609,7 +617,7 @@ export const routesAuth = [
 | CamelCase         | `case types.<NAME_TYPE>` | `INITIAL_STATE = {...}` | UPPER_CASE |
 | actions.ts        | reducer.ts               | state.ts                | types.ts   |
 
-**actions.ts**
+**<name_module>.actions.ts**
 
 ```ts
 import * as types from './types';
@@ -621,7 +629,7 @@ export const setData = (data) => {
 };
 ```
 
-**reducer.ts**
+**<name_module>.reducer.ts**
 
 ```ts
 import { INITIAL_STATE } from './state';
@@ -637,7 +645,7 @@ export default (state = INITIAL_STATE, action) => {
 };
 ```
 
-**state.ts**
+**<name_module>.state.ts**
 
 ```ts
 export const INITIAL_STATE = {
@@ -645,17 +653,23 @@ export const INITIAL_STATE = {
 };
 ```
 
-**types.ts**
+**<name_module>.types.ts**
 
 ```ts
-export const SET_DATA_EXAMPLE = 'SET_DATA_EXAMPLE';
+export const SET_DATA_EXAMPLE = '[<NAME_MODULE>] SET_DATA_EXAMPLE';
 ```
 
+### Import Helpers
+
 🇺🇸
+
+In order to keep imports within our React components organized, we use a library called **Import Helpers**, it helps us to self-organize imports. Being completely customizable.
 
 To understand more of the advantages of this code style click [here](#advantages).
 
 🇧🇷
+
+A fim de manter organizado as importações dentro de nossos componentes React, usamos uma biblioteca chamada de **Import Helpers**, ele nos auxilia a auto organizar as importações. Sendo completamente customizável.
 
 Para entender mais das vantagens desse code style clique [aqui](#advantages).
 

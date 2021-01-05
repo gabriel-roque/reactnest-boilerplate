@@ -1,4 +1,4 @@
-import * as types from './types';
+import * as types from './home.types';
 
 import { github } from 'core/providers';
 

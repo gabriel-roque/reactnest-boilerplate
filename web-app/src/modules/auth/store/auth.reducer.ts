@@ -1,5 +1,5 @@
-import { INITIAL_STATE } from './state';
-import * as types from './types';
+import { INITIAL_STATE } from './auth.state';
+import * as types from './auth.types';
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
