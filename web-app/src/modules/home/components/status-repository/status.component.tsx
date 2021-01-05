@@ -38,15 +38,3 @@ export default function StatusRepository() {
     </Grid>
   );
 }
-
-// const mapStateToProps = state => ({
-//   repositore: state.home.repositore,
-// });
-
-// const mapDispatchToProps = dispatch => ({
-//   getStars: () => dispatch(getStarsRepositores()),
-//   getForks: () => dispatch(getForksRepositores()),
-//   getWatchs: () => dispatch(getWatchsRepositores()),
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(StatusRepository);
