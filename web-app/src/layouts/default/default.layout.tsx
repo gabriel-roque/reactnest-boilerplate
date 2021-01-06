@@ -8,7 +8,7 @@ export function DefaultLayout(props: any) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar title="REACTDONIS v.2" />
+      <AppBar title="REACTNEST V.3" />
       <main>{props.children}</main>
       <Footer />
     </React.Fragment>

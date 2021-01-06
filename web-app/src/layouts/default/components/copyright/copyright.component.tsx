@@ -8,7 +8,7 @@ export function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'MIT LICENSE - '}
       <Link color="inherit" href="https://github.com/gabriel-roque">
-        Reactdonis v.2 -
+        Reactnest v.3 -
       </Link>{' '}
       {new Date().getFullYear()}
     </Typography>

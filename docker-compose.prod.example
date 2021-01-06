@@ -33,14 +33,15 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
+    working_dir: /api
     container_name: app-api
     volumes:
       - ./api:/api
     command: sh -c "npx pm2 start ecosystem.config.js --no-daemon"
     ports:
-      - "8080:8080"
-    environment:
-      - DB_HOST=app-database
-      - DB_PORT=5432
+      - '8000:8000'
+    expose:
+      - '5432'
+    env_file: ./api/.env
     depends_on:
       - database-service

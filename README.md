@@ -48,21 +48,21 @@
 
 ## 💡 Introduction
 
-🗼 A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
+🗼 A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, NestJS, TypeORM, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
 
 ### 🏃 Motivation
 
 🇺🇸 **EUA**
 
-You may not want to set up a project from scratch, so you decide to look for some base templete to design your system, without having to deal with many configurations. So maybe ReactDonis is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
+You may not want to set up a project from scratch, so you decide to look for some base templete to design your system, without having to deal with many configurations. So maybe Reactnest is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
 
-ReactDonis does not seek to be a silver bullet (only solution) for all projects, but rather to provide an initial model for the construction of projects.
+Reactnest does not seek to be a silver bullet (only solution) for all projects, but rather to provide an initial model for the construction of projects.
 
 🇧🇷 **PT-BR**
 
-Talvez você não queira configurar um projeto do zero, então você resolve procurar algum templete base para projetar seu sistema, sem ter que lidar com muitas configurações. Então talvez o ReactDonis seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
+Talvez você não queira configurar um projeto do zero, então você resolve procurar algum templete base para projetar seu sistema, sem ter que lidar com muitas configurações. Então talvez o Reactnest seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
 
-O ReactDonis não procura ser uma bala de prata (única solução) para todos os projetos e sim prover um modelo inicial para a construção de projetos.
+O Reactnest não procura ser uma bala de prata (única solução) para todos os projetos e sim prover um modelo inicial para a construção de projetos.
 
 [🔝 back to top](#-summary)
 
@@ -278,15 +278,15 @@ Essa abordagem permite uma fácil busca e integração com buscadores sejam de s
 
 🇺🇸
 
-As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way **ReactDonis** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
+As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way **Reactnest** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
 
-That is, ReactDonis defines a guide for your project, but nothing will stop you from making your changes, feel free to contribute.
+That is, Reactnest defines a guide for your project, but nothing will stop you from making your changes, feel free to contribute.
 
 🇧🇷
 
-Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **ReactDonis** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturais, tecnologias e etc.
+Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **Reactnest** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturais, tecnologias e etc.
 
-Isto é, o ReactDonis define um guia para o seu projeto, porém nada o impedirá de fazer suas modificações, fique a vontade para contribuir.
+Isto é, o Reactnest define um guia para o seu projeto, porém nada o impedirá de fazer suas modificações, fique a vontade para contribuir.
 
 **3. Based on Conventions and Styles Popular Guides | Baseado em Convenções e Styles Guides Populares**
 
@@ -539,7 +539,7 @@ import { Footer, AppBar } from 'layouts/default/components';
 export function DefaultLayout(props: any) {
   return (
     <React.Fragment>
-      <AppBar title="REACTDONIS v.2" />
+      <AppBar title="REACTNEST V.3" />
       <main>{props.children}</main>
       <Footer />
     </React.Fragment>

@@ -9,5 +9,5 @@ module.exports = {
     '^config/(.*)$': '<rootDir>/src/config/$1.ts',
     '^entity/(.*)$': '<rootDir>/src/entity/$1.ts',
   },
-  modulePathIgnorePatterns: ['<rootDir>/dist/', '<rootDir>/docker/'],
+  modulePathIgnorePatterns: ['<rootDir>/dist/'],
 };
