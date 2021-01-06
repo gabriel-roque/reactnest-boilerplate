@@ -1,4 +1,4 @@
-echo "************* [REACT-DONIS-STARTER] *************"
+echo "************* [REACTNEST] *************"
 
 echo "****** [CHANGELOG CONVENTION] ****** [CONFIGURING PROJECT] ******"
 npm install
@@ -8,7 +8,6 @@ echo "****** [API DEPENDENCIES] ****** [CONFIGURING PROJECT] ******"
 
 cd ./api 
 cp .env.example .env
-npx adonis key:generate
 npm install
 cd ..
 
