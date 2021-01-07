@@ -1,4 +1,4 @@
-import { LoginPage } from './pages/Login/login.page';
+import { LoginPage } from './pages/login/login.page';
 
 export const routesAuth = [
   {

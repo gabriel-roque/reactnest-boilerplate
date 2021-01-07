@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 
-const HomePage = lazy(() => import('./pages/Home/home.page'))
+const HomePage = lazy(() => import('./pages/home/home.page'))
 
 export const routesHome = [
   {

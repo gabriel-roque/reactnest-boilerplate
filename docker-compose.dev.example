@@ -2,7 +2,7 @@ version: '3'
 
 services:
   database-service:
-    image: postgres:10
+    image: postgres:12
     container_name: app-database
     environment:
       - POSTGRES_DB=reactnest

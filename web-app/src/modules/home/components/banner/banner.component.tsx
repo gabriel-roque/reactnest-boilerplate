@@ -27,8 +27,7 @@ export default function Banner() {
           <span role="img" aria-labelledby="tower">
             🗼
           </span>
-          A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL,
-          Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
+          A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, NestJS, TypeORM, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
         </Typography>
         <div className={classes.buttons}>
           <Grid container spacing={2} justify="center">
