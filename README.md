@@ -223,17 +223,24 @@ Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** 
 ```sh
 // create migration blank
 $ npm run typeorm:create
+
 // create migration by modify entity
 $ npm run typeorm:migrate
+
 // run migrations
 $ npm run typeorm:run
+
 // revert migrations
 $ typeorm:revert
+
 // drop migrations database
 $ typeorm:drop
+
 // create an entity
 $ entity:create
 ```
+
+[🔝 back to top](#-summary)
 
 ## 📝 Minimal Requirements
 

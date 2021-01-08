@@ -32,7 +32,7 @@ export default function Banner() {
         <div className={classes.buttons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <Link href="https://github.com/gabriel-roque/react-donis-docker-starter" target="_blank">
+              <Link href="https://github.com/gabriel-roque/reactnest-boilerplate" target="_blank">
                 <Button variant="contained" color="default" size="large" className={classes.btnGithub}>
                   <FontAwesomeIcon icon={faGithub} size="lg" className={classes.githubIcon} /> <b>Get started</b>
                 </Button>
