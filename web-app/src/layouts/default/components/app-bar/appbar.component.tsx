@@ -11,7 +11,7 @@ interface Props {
 
 export function AppBar(props: Props) {
   return (
-    <AppBarMUI position="relative" style={{ backgroundColor: palletColors.adonis }}>
+    <AppBarMUI position="relative" style={{ backgroundColor: palletColors.reactnest }}>
       <Toolbar>
         <b>{props.title ? props.title : 'Generic Title'}</b>
       </Toolbar>

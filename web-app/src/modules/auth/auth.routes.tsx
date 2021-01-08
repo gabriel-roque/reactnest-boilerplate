@@ -1,4 +1,6 @@
-import { LoginPage } from './pages/Login/login.page';
+import { lazy } from 'react'
+
+const LoginPage = lazy(() => import('modules/auth/pages/login/login.page'))
 
 export const routesAuth = [
   {

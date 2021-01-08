@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="web-app/src/assets/img/logos/reactdonis.png"/>
+  <img src="web-app/src/assets/img/logos/reactnest.jpg"/>
 </p>
 
 <p align="center">
   <a href="https://app.netlify.com/sites/reactdonis/deploys"><img src="https://api.netlify.com/api/v1/badges/81d22914-c554-4770-975e-a41ba0ddf776/deploy-status"></a>
-  <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/ReactJS-16.x-blue"></a>
-  <a href="https://redux.js.org/"><img src="https://img.shields.io/badge/Redux-4.0.x-blue"></a>
-  <a href="https://github.com/reduxjs/redux-thunk"><img src="https://img.shields.io/badge/Redux Thunk-2.3.x-green"></a>
-  <a href="https://reacttraining.com/react-router/web/guides/quick-start"><img src="https://img.shields.io/badge/React Router-5.1.x-blueviolet"></a>
-  <a href="https://pm2.keymetrics.io/"><img src="https://img.shields.io/badge/PM2-4.2.x-orange"></a>
-  <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node-12.x-green"></a>
-  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/Postgress-10-blue"></a>
-  <a href="https://adonisjs.com/"><img src="https://img.shields.io/badge/AdonisJS-4.x-blueviolet"></a>
-  <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/NPM-6.x-red"></a>
-  <a href="https://www.conventionalcommits.org/en/v1.0.0/"><img src="https://img.shields.io/badge/Commitizen-friendly-green"></a>
+  <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/ReactJS-16.x-blue?style=flat-square&logo=react"></a>
+  <a href="https://redux.js.org/"><img src="https://img.shields.io/badge/Redux-4.0.x-AA00FF?style=flat-square&logo=react"></a>
+  <a href="https://github.com/reduxjs/redux-thunk"><img src="https://img.shields.io/badge/Redux Thunk-2.3.x-green?style=flat-square&logo=react"></a>
+  <a href="https://reacttraining.com/react-router/web/guides/quick-start"><img src="https://img.shields.io/badge/React Router-5.1.x-CA4245?style=flat-square&logo=react-router"></a>
+  <a href="https://pm2.keymetrics.io/"><img src="https://img.shields.io/badge/PM2-4.2.x-AA00FF?style=flat-square"></a>
+  <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node-14.x-green?style=flat-square&logo=node.js"></a>
+  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/Postgress-10-blue?style=flat-square&logo=postgresql"></a>
+  <a href="https://nestjs.com/"><img src="https://img.shields.io/badge/NestJS-7.5.x-E0234E?style=flat-square&logo=nestjs"></a>
+  <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/NPM-6.x-CB3837?style=flat-square&logo=npm"></a>
+  <a href="https://www.conventionalcommits.org/en/v1.0.0/"><img src="https://img.shields.io/badge/Commitizen-friendly-F05032?style=flat-square&logo=git"></a>
 </p>
 
 <hr>
@@ -29,6 +29,7 @@
   - [React Router](#react-router)
   - [Redux + DevTools](#redux)
   - [Conventional Changelog](#conventional-changelog)
+  - [TyprORM](#typeorm)
 - [Install](#-install)
   - [Development](#-configure-in-development)
   - [Production](#-configure-in-production)
@@ -48,21 +49,21 @@
 
 ## 💡 Introduction
 
-🗼 A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
+🗼 A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, NestJS, TypeORM, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
 
 ### 🏃 Motivation
 
 🇺🇸 **EUA**
 
-You may not want to set up a project from scratch, so you decide to look for some base templete to design your system, without having to deal with many configurations. So maybe ReactDonis is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
+You may not want to set up a project from scratch, so you decide to look for some base templete to design your system, without having to deal with many configurations. So maybe Reactnest is a good alternative for you and your team. The motivation is to share a pre-modeled structure where you can start your project in a few minutes and modify it according to the needs of your project.
 
-ReactDonis does not seek to be a silver bullet (only solution) for all projects, but rather to provide an initial model for the construction of projects.
+Reactnest does not seek to be a silver bullet (only solution) for all projects, but rather to provide an initial model for the construction of projects.
 
 🇧🇷 **PT-BR**
 
-Talvez você não queira configurar um projeto do zero, então você resolve procurar algum templete base para projetar seu sistema, sem ter que lidar com muitas configurações. Então talvez o ReactDonis seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
+Talvez você não queira configurar um projeto do zero, então você resolve procurar algum templete base para projetar seu sistema, sem ter que lidar com muitas configurações. Então talvez o Reactnest seja uma boa alternativa para você e seu time. A motivação está em compartilhar uma estrutura pré modelada onde você pode começar seu projeto em poucos minutos e modificar conforme as necessidades do seu projeto.
 
-O ReactDonis não procura ser uma bala de prata (única solução) para todos os projetos e sim prover um modelo inicial para a construção de projetos.
+O Reactnest não procura ser uma bala de prata (única solução) para todos os projetos e sim prover um modelo inicial para a construção de projetos.
 
 [🔝 back to top](#-summary)
 
@@ -153,7 +154,19 @@ Ao executar em produção você terá um resultado semelhante a 2 instâncias da
 
 #### Redux
 
-Soon more explanations...
+🇺🇸
+
+With Redux DevTools we can easily find the events for each action as defined by [code style](#code-style). If you do not already have the extension in your browser, access [here](https://github.com/reduxjs/redux-devtools).
+
+🇧🇷
+
+Com o Redux DevTools podemos com facilidade encontrar os eventos de cada action conforme definido pelo [code style](#code-style). Caso ainda não possua a extensão no seu navagador acesse [aqui](https://github.com/reduxjs/redux-devtools).
+
+<p align="center">
+  <img src="web-app/src/assets/github/redux.png" width="350">
+</p>
+
+[🔝 back to top](#-summary)
 
 #### React Router
 
@@ -177,6 +190,8 @@ export const routesHome = [
   },
 ];
 ```
+
+[🔝 back to top](#-summary)
 
 #### Conventional Changelog
 
@@ -203,41 +218,66 @@ Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** 
 
 [🔝 back to top](#-summary)
 
+### TypeORM
+
+```sh
+// create migration blank
+$ npm run typeorm:create
+// create migration by modify entity
+$ npm run typeorm:migrate
+// run migrations
+$ npm run typeorm:run
+// revert migrations
+$ typeorm:revert
+// drop migrations database
+$ typeorm:drop
+// create an entity
+$ entity:create
+```
+
 ## 📝 Minimal Requirements
 
-- NodeJs 12.x
+- NodeJs 14.x
 - Docker 18.x
 - Docker-compose 1.25.x
 
 ## 🚀 Install
 
 ```
+
 $ git clone https://github.com/gabriel-roque/react-donis-docker-starter
 $ cd react-donis-docker-starter
+
 ```
 
 ### 🔧 Configure in development
 
 ```
+
 $ ./entrypoint-dev.sh
+
 ```
 
 ### 🔧 Configure in production
 
 ```
+
 $ ./entrypoint-prod.sh
+
 ```
 
 ## 📈 Run app
 
 ```
+
 $ cd web-app && npm start
+$ cd api && npm run start:dev
+// or
 $ docker-compose up -d
+
 ```
 
-> Check **web-app** in http://localhost:3000/ for _**DEVELOPMENT**_
-
-> Check **web-app** in http://localhost/ for _**PRODUCTION**_
+> Check **web-app** in http://localhost:3000
 
 > Check **api** in http://localhost:8080
 
@@ -278,15 +318,15 @@ Essa abordagem permite uma fácil busca e integração com buscadores sejam de s
 
 🇺🇸
 
-As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way **ReactDonis** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
+As well as frameworks like **Laravel**, **Rails** or **AdonisJS** itself have **Design Patterns** and architectural structures in common and well thought out. In this way **Reactnest** seeks to bring a construction of a base structure so that you can develop your projects without having to decide many things (opinionated), but also not taking away its power of architectural changes, technologies and etc.
 
-That is, ReactDonis defines a guide for your project, but nothing will stop you from making your changes, feel free to contribute.
+That is, Reactnest defines a guide for your project, but nothing will stop you from making your changes, feel free to contribute.
 
 🇧🇷
 
-Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **ReactDonis** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturais, tecnologias e etc.
+Assim como frameworks como **Laravel**, **Rails** ou o próprio **AdonisJS** possuem **Design Patterns** e estruturas arquiteturais em comum e bem opnidas. Desta forma o **Reactnest** procura trazer uma construção de uma estrurura base que você possa desenvolver seus projetos sem ter que dicidir muitas coisas (opinada), mas também não tirando seu poder de alterações arquiteturais, tecnologias e etc.
 
-Isto é, o ReactDonis define um guia para o seu projeto, porém nada o impedirá de fazer suas modificações, fique a vontade para contribuir.
+Isto é, o Reactnest define um guia para o seu projeto, porém nada o impedirá de fazer suas modificações, fique a vontade para contribuir.
 
 **3. Based on Conventions and Styles Popular Guides | Baseado em Convenções e Styles Guides Populares**
 
@@ -539,7 +579,7 @@ import { Footer, AppBar } from 'layouts/default/components';
 export function DefaultLayout(props: any) {
   return (
     <React.Fragment>
-      <AppBar title="REACTDONIS v.2" />
+      <AppBar title="REACTNEST V.3" />
       <main>{props.children}</main>
       <Footer />
     </React.Fragment>
@@ -554,7 +594,7 @@ import React from 'react';
 
 import { DefaultLayout } from 'layouts';
 
-export function HomePage() {
+export default function HomePage() {
   return (
     <DefaultLayout>
       <div>...</div>
@@ -590,13 +630,15 @@ export const useStyles = makeStyles(theme => ({
 | Path fo Route | Component will Render | `<name module>.<name-component>` | Is route public or private |
 
 ```ts
-import { LoginPage } from './pages/Login/login.page';
+import { lazy } from 'react';
+
+const LoginPage = lazy(() => import('modules/auth/pages/login/login.page'));
 
 export const routesAuth = [
   {
     path: '/login',
     component: LoginPage,
-    name: 'auth.login-page',
+    name: 'auth.login',
     public: false,
   },
 ];
@@ -612,10 +654,10 @@ export const routesAuth = [
 
 #### How to name files redux store
 
-| Actions/Dispatchs | Reducers                 | State Module            | Types      |
-| ----------------- | ------------------------ | ----------------------- | ---------- |
-| CamelCase         | `case types.<NAME_TYPE>` | `INITIAL_STATE = {...}` | UPPER_CASE |
-| actions.ts        | reducer.ts               | state.ts                | types.ts   |
+| Actions/Dispatchs        | Reducers                 | State Module            | Types                  |
+| ------------------------ | ------------------------ | ----------------------- | ---------------------- |
+| CamelCase                | `case types.<NAME_TYPE>` | `INITIAL_STATE = {...}` | UPPER_CASE             |
+| <name_module>.actions.ts | <name_module>.reducer.ts | <name_module>.state.ts  | <name_module>.types.ts |
 
 **<name_module>.actions.ts**
 

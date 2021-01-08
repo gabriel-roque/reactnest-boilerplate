@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ReactdonisLogo from 'assets/img/logos/reactdonis.png';
+import ReactdonisLogo from 'assets/img/logos/reactnest.jpg';
 
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
@@ -12,7 +12,7 @@ import { useStyles } from './banner.styles';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { StatusRepositore } from 'modules/home/components';
+import { StatusRepository } from 'modules/home/components';
 
 export default function Banner() {
   const classes = useStyles();
@@ -27,8 +27,7 @@ export default function Banner() {
           <span role="img" aria-labelledby="tower">
             🗼
           </span>
-          A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, AdonisJS, PostgreSQL,
-          Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
+          A starter project template with (Ngnix, ReactJS, Redux, Redux Thunk, React Router, NestJS, TypeORM, PostgreSQL, Docker, PM2) + (Code Style, Conventional Changelog with Commitlint, Husky, Git CZ)
         </Typography>
         <div className={classes.buttons}>
           <Grid container spacing={2} justify="center">
@@ -41,7 +40,7 @@ export default function Banner() {
             </Grid>
           </Grid>
         </div>
-        <StatusRepositore />
+        <StatusRepository />
       </Container>
     </div>
   );
