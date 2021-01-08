@@ -29,6 +29,7 @@
   - [React Router](#react-router)
   - [Redux + DevTools](#redux)
   - [Conventional Changelog](#conventional-changelog)
+  - [TyprORM](#typeorm)
 - [Install](#-install)
   - [Development](#-configure-in-development)
   - [Production](#-configure-in-production)
@@ -217,6 +218,23 @@ Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** 
 
 [🔝 back to top](#-summary)
 
+### TypeORM
+
+```sh
+// create migration blank
+$ npm run typeorm:create
+// create migration by modify entity
+$ npm run typeorm:migrate
+// run migrations
+$ npm run typeorm:run
+// revert migrations
+$ typeorm:revert
+// drop migrations database
+$ typeorm:drop
+// create an entity
+$ entity:create
+```
+
 ## 📝 Minimal Requirements
 
 - NodeJs 14.x
@@ -226,29 +244,37 @@ Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** 
 ## 🚀 Install
 
 ```
+
 $ git clone https://github.com/gabriel-roque/react-donis-docker-starter
 $ cd react-donis-docker-starter
+
 ```
 
 ### 🔧 Configure in development
 
 ```
+
 $ ./entrypoint-dev.sh
+
 ```
 
 ### 🔧 Configure in production
 
 ```
+
 $ ./entrypoint-prod.sh
+
 ```
 
 ## 📈 Run app
 
 ```
+
 $ cd web-app && npm start
 $ cd api && npm run start:dev
 // or
 $ docker-compose up -d
+
 ```
 
 > Check **web-app** in http://localhost:3000
