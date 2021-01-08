@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ReactdonisLogo from 'assets/img/logos/reactdonis.png';
+import ReactdonisLogo from 'assets/img/logos/reactnest.jpg';
 
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="web-app/src/assets/img/logos/reactdonis.png"/>
+  <img src="web-app/src/assets/img/logos/reactnest.jpg"/>
 </p>
 
 <p align="center">
@@ -153,7 +153,19 @@ Ao executar em produção você terá um resultado semelhante a 2 instâncias da
 
 #### Redux
 
-Soon more explanations...
+🇺🇸
+
+With Redux DevTools we can easily find the events for each action as defined by [code style](#code-style). If you do not already have the extension in your browser, access [here](https://github.com/reduxjs/redux-devtools).
+
+🇧🇷
+
+Com o Redux DevTools podemos com facilidade encontrar os eventos de cada action conforme definido pelo [code style](#code-style). Caso ainda não possua a extensão no seu navagador acesse [aqui](https://github.com/reduxjs/redux-devtools).
+
+<p align="center">
+  <img src="web-app/src/assets/github/redux.png" width="350">
+</p>
+
+[🔝 back to top](#-summary)
 
 #### React Router
 
@@ -177,6 +189,8 @@ export const routesHome = [
   },
 ];
 ```
+
+[🔝 back to top](#-summary)
 
 #### Conventional Changelog
 
@@ -205,7 +219,7 @@ Este projeto possui ferramentas que aplicam as normas previstas na **RFC 2119** 
 
 ## 📝 Minimal Requirements
 
-- NodeJs 12.x
+- NodeJs 14.x
 - Docker 18.x
 - Docker-compose 1.25.x
 
@@ -232,12 +246,12 @@ $ ./entrypoint-prod.sh
 
 ```
 $ cd web-app && npm start
+$ cd api && npm run start:dev
+// or
 $ docker-compose up -d
 ```
 
-> Check **web-app** in http://localhost:3000/ for _**DEVELOPMENT**_
-
-> Check **web-app** in http://localhost/ for _**PRODUCTION**_
+> Check **web-app** in http://localhost:3000
 
 > Check **api** in http://localhost:8080
 
@@ -554,7 +568,7 @@ import React from 'react';
 
 import { DefaultLayout } from 'layouts';
 
-export function HomePage() {
+export default function HomePage() {
   return (
     <DefaultLayout>
       <div>...</div>
@@ -590,13 +604,15 @@ export const useStyles = makeStyles(theme => ({
 | Path fo Route | Component will Render | `<name module>.<name-component>` | Is route public or private |
 
 ```ts
-import { LoginPage } from './pages/Login/login.page';
+import { lazy } from 'react';
+
+const LoginPage = lazy(() => import('modules/auth/pages/login/login.page'));
 
 export const routesAuth = [
   {
     path: '/login',
     component: LoginPage,
-    name: 'auth.login-page',
+    name: 'auth.login',
     public: false,
   },
 ];
@@ -612,10 +628,10 @@ export const routesAuth = [
 
 #### How to name files redux store
 
-| Actions/Dispatchs | Reducers                 | State Module            | Types      |
-| ----------------- | ------------------------ | ----------------------- | ---------- |
-| CamelCase         | `case types.<NAME_TYPE>` | `INITIAL_STATE = {...}` | UPPER_CASE |
-| actions.ts        | reducer.ts               | state.ts                | types.ts   |
+| Actions/Dispatchs        | Reducers                 | State Module            | Types                  |
+| ------------------------ | ------------------------ | ----------------------- | ---------------------- |
+| CamelCase                | `case types.<NAME_TYPE>` | `INITIAL_STATE = {...}` | UPPER_CASE             |
+| <name_module>.actions.ts | <name_module>.reducer.ts | <name_module>.state.ts  | <name_module>.types.ts |
 
 **<name_module>.actions.ts**
 
