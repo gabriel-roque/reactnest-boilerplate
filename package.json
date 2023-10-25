@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/gabriel-roque/react-donis-docker-starter#readme",
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
+    "@commitlint/cli": "^8.3.6",
     "@commitlint/config-conventional": "^8.3.4",
     "cz-conventional-changelog": "^3.2.0",
     "husky": "^4.2.5"
